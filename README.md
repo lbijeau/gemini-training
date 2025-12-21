@@ -1,3 +1,5 @@
+![Gemini Training Logo](assets/logo.png)
+
 # Gemini Training
 
 Welcome to the Gemini Training repository!
