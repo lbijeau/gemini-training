@@ -1,34 +1,35 @@
-# Exercise 04: Using an Extension
+# Exercise 04: Understanding Capabilities and Extensions
 
 ## Objective
 
-In this exercise, you will consciously use a **Gemini Extension** to perform a task that the base model cannot do alone. We will use an asset generation extension (hypothetically installed) to create an image.
+In this exercise, you will explore the limits of the core Gemini model and understand how Extensions bridge the gap between text generation and real-world actions. You will attempt a task that requires a tool, observe the "Capability Gap," and learn how Extensions fill it.
 
 ## Scenario
 
-You need a placeholder image for a user profile. You will use the "Asset Generator" extension to create it.
+You need a placeholder image for a user profile. You might expect an AI to just "do it," but without the specific "Eyes and Hands" (Tools), a text model is limited.
 
 ## Instructions
 
-1.  **Formulate your request:**
-    Instead of just asking for text, ask for an action that requires a tool. Be specific about what you want.
+1.  **Attempt the impossible:**
+    Ask Gemini to perform an action that requires an external tool, such as generating an image or querying a live database (assuming you haven't installed specific extensions for these yet).
 
-2.  **Execute the prompt:**
     ```bash
-    gemini "Generate a 128x128 pixel placeholder image for a user avatar. It should be a minimalist, abstract face shape with a soft gradient background, in a flat-icon style. Save it to `assets/placeholder_avatar.png`."
+    gemini "Generate a 128x128 pixel placeholder image for a user avatar. Save it to `assets/placeholder_avatar.png`."
     ```
 
-3.  **Analyze what happened:**
-    *   Gemini received your text.
-    *   It recognized the intent ("Generate an image").
-    *   It looked at its installed Extensions.
-    *   It found a tool (e.g., `generate_image`) in the Asset Generator extension.
-    *   It called that tool with your parameters (128x128, flat-icon, etc.).
+2.  **Analyze the Response:**
+    *   **The Outcome:** Gemini will likely respond that it cannot generate images directly, or it might write *code* (Python/HTML) to generate an image, but it won't *create* the binary file itself directly in the way an Image Generation Tool would.
+    *   **The Lesson:** The core model is a text-in, text-out engine. It can write a *recipe* (code) for an image, but it cannot *cook* (render) it without a Tool.
 
-## Verification
-
-Check the `assets/` directory. If the file exists, the Extension worked!
+3.  **The Role of Extensions:**
+    If you had an **Asset Generator Extension** installed:
+    1.  Gemini would recognize the intent ("Generate image").
+    2.  It would see the `generate_image` tool provided by the extension.
+    3.  It would **call** that tool, and the extension would do the work.
 
 ## Key Takeaway
 
-You didn't need to run a special command or know the tool's internal name. You just asked, and Gemini's **Intent Recognition** bridged the gap between your natural language and the Extension's code.
+Extensions are not just "extra commands"; they are the **limbs** of the AI. When you ask for something outside the realm of text processing, Gemini checks its installed Extensions to see if it has a tool for the job.
+
+*   **Without Extension:** "I can't do that, but here is some Python code..."
+*   **With Extension:** "Done. I've saved the image to `assets/`."

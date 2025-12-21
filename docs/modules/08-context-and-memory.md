@@ -30,4 +30,4 @@ Don't forget that `/chat save` and `/chat resume` (Module 06) interact with this
 ## Next Steps
 
 Head to the exercise to define your project's personality.
-*   `docs/exercises/09-context-mastery/` (to be created)
+*   [Exercise 09: Context Mastery with GEMINI.md](../exercises/09-context-mastery/README.md)
