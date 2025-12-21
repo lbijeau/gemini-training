@@ -73,7 +73,7 @@ if __name__ == "__main__":
 
 ## Troubleshooting Tips
 
-*   If Gemini's output isn't quite right, try refining your prompt to be more specific.
-*   Check the Gemini CLI documentation for more advanced refactoring options or flags.
+*   If Gemini's output isn't quite right, try refining your prompt to be more specific. Mentioning the specific file path and function names helps Gemini focus.
+*   If Gemini fails to edit the file, try asking it to "Output the full corrected code" and then manually copy it.
 
 Good luck!

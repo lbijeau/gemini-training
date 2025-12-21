@@ -16,11 +16,10 @@ You are working on a feature that requires a placeholder image for a user avatar
 2.  **Generate a placeholder avatar:**
     Ask Gemini to generate a simple, minimalist avatar. You'll specify the content, dimensions, and output path.
 
-    **Example Prompt Idea:**
+    **Example Prompt:**
     ```bash
     gemini "Generate a 128x128 pixel placeholder image for a user avatar. It should be a minimalist, abstract face shape with a soft gradient background, in a flat-icon style. Save it to `assets/placeholder_avatar.png`."
     ```
-    *(Note: This assumes Gemini is configured with an asset generation skill that understands this type of prompt.)*
 
 3.  **Verify the output:**
     Check the `assets/` directory to confirm that `placeholder_avatar.png` has been created. You can open it to see the generated image.
@@ -31,7 +30,8 @@ A new file `assets/placeholder_avatar.png` will be created, containing a 128x128
 
 ## Further Exploration
 
-*   Experiment with different prompts, styles, and dimensions using the `gemini generate-asset` (or equivalent) command.
-*   Think about other types of assets you might need (e.g., icons, background images) and try generating them.
+*   Experiment with different prompts, styles, and dimensions. Observe how Gemini translates your natural language requirements into the specific inputs needed by the `asset-generator` skill.
+*   Try asking for different types of assets (e.g., "Create a 24x24 pixel 'save' icon" or "Render a simple flowchart of a login process").
+*   Notice that you aren't learning new command flags for every task; you are learning how to describe your needs effectively.
 
 This exercise demonstrates how superpowers allow Gemini to perform specialized tasks, integrating with various tools and APIs to fulfill complex requests.

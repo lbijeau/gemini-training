@@ -12,6 +12,16 @@ The Gemini CLI is designed to be an intelligent coding partner. It can assist wi
 *   **Code Explanation:** Providing clear explanations for complex code snippets.
 *   **Test Generation:** Creating unit tests for your functions or modules.
 
+## The Prompt is the API
+
+One of the most powerful aspects of the Gemini CLI is its unified interface. Unlike traditional command-line tools that require you to learn dozens of specific flags and subcommands, Gemini uses **Natural Language as its API**.
+
+*   **Unified Entry Point:** You don't need to remember if it's `gemini generate` or `gemini create`. You just tell Gemini what you want.
+*   **Contextual Flexibility:** You can combine multiple requests into a single prompt (e.g., "Refactor this function *and* add unit tests").
+*   **Intuitive Discovery:** Instead of digging through help pages, you can often just ask Gemini what it's capable of or how to perform a task.
+
+This shift means that **Prompt Engineering**—the art of crafting clear, specific, and contextual requests—is now your primary technical skill for mastering this tool.
+
 ## Key Interaction Patterns
 
 Interacting with Gemini typically involves the following steps, which can be visualized as a cycle:

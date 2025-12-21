@@ -73,13 +73,26 @@ fi
 echo "Echoing: $MESSAGE"
 ```
 
-## 4. Skill Discovery and Invocation
+## 4. How Gemini Decides to Use Your Skill (Intent Recognition)
 
-Once your skill is defined (i.e., the `SKILL.md` and associated scripts are in place), Gemini's runtime environment needs to discover it. Typically, this involves placing your skill directory in a designated `skills` folder (e.g., `~/.codex/skills/` or similar).
+The most critical part of authoring a skill is bridging the gap between a user's natural language request and your script's execution. Gemini does this via **Intent Recognition**:
 
-When you then make a request to Gemini that matches the "When to Use" criteria or explicitly invoke the skill, Gemini will execute the associated scripts with the provided arguments.
+1.  **Context Loading:** When Gemini starts, it reads the `SKILL.md` manifests of all available skills.
+2.  **Matching:** When you provide a prompt like `gemini "echo 'Hello!'"`, Gemini compares your request against the "When to Use" and "Description" sections of every manifest.
+3.  **Extraction:** Once a match is found, Gemini uses the "Parameters" definition to extract the necessary data from your prompt (e.g., extracting "Hello!" as the `message` argument).
+4.  **Execution:** Finally, it invokes your script with those extracted arguments.
+
+**Pro Tip:** Spend time crafting clear "When to Use" examples. They are the "API documentation" that Gemini uses to understand your tool.
+
+## 5. Skill Discovery and Invocation
+
+Once your skill is defined, Gemini's runtime environment needs to discover it. Typically, this involves adding the skill's path to Gemini's extension list:
+
+```bash
+gemini extensions add ./path/to/your-skill
+```
 
 ## Next Steps
 
 Head over to the exercise to create and test your very first Gemini skill!
-*   `docs/exercises/05-authoring-a-skill/` (to be created)
+*   `docs/exercises/06-authoring-a-skill/`

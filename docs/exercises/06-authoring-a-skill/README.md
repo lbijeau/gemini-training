@@ -37,8 +37,8 @@ You want Gemini to be able to "echo" a message back to you. This might seem triv
 
     ## Usage Example
 
-    ```
-    gemini use-skill my-echo-skill --message "Hello from my custom skill!"
+    ```bash
+    gemini "echo the message 'Hello from my custom skill!'"
     ```
 
     ## Parameters
@@ -84,13 +84,13 @@ You want Gemini to be able to "echo" a message back to you. This might seem triv
     chmod +x practice/skills/my-echo-skill/scripts/echo-message.sh
     ```
 
-### Step 4: Invoke Your New Skill (Hypothetically)
+### Step 4: Invoke Your New Skill
 
-To actually run this skill, the `gemini-cli` would need to be configured to discover skills in your `practice/skills/` directory (e.g., by adding it via `gemini extensions add ./practice/skills/my-echo-skill`).
+To run this skill, the `gemini-cli` must first be configured to discover it (e.g., by adding its path via `gemini extensions add ./practice/skills/my-echo-skill`).
 
-Once the skill is registered, you would invoke it with a natural language prompt that matches the "When to Use" criteria defined in your `SKILL.md`.
+Once registered, invoke it using a prompt that matches the "When to Use" criteria in your `SKILL.md`.
 
-**Example Prompt Idea:**
+**Example Prompt:**
 ```bash
 gemini "Please use the 'my-echo-skill' to echo the following message: 'This is my first custom skill!'"
 ```
