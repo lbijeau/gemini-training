@@ -20,10 +20,11 @@ gemini " @docs/personas/ravi-the-reviewer.md Review my code in main.py"
 This tells Gemini: "Read the instructions in Ravi's file, adopt that persona, and then review my code."
 
 ### 2. The `GEMINI.md` Method (Persistent)
-If you want Gemini to *always* act like a specific persona for a project, copy the content of the persona file into a `GEMINI.md` file in your project root.
+If you want Gemini to *always* act like a specific persona for a project, append the content of the persona file to your `GEMINI.md` file in the project root.
 
 ```bash
-cat docs/personas/alex-the-advanced-user.md > GEMINI.md
+# Append the persona to your existing context file
+cat docs/personas/alex-the-advanced-user.md >> GEMINI.md
 ```
 
-Now, every interaction in this folder will be guided by Alex's persona.
+Now, every interaction in this folder will be guided by Alex's persona (in addition to any existing rules).

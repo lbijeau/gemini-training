@@ -19,7 +19,7 @@ You need a placeholder image for a user profile. You might expect an AI to just 
 
 2.  **Analyze the Response:**
     *   **The Outcome:** Gemini will likely respond that it cannot generate images directly, or it might write *code* (Python/HTML) to generate an image, but it won't *create* the binary file itself directly in the way an Image Generation Tool would.
-    *   **The Lesson:** The core model is a text-in, text-out engine. It can write a *recipe* (code) for an image, but it cannot *cook* (render) it without a Tool.
+    *   **The Lesson:** The core model processes text. While the CLI allows it to write text files (like code), it cannot natively generate binary assets (like images) or execute external actions without a specific Tool.
 
 3.  **The Role of Extensions:**
     If you had an **Asset Generator Extension** installed:
