@@ -29,54 +29,37 @@ You have a Python script with functions that return simple strings. You want to 
         return "Product not found"
     ```
 
-2.  **Use Few-Shot Prompting to refactor `get_user`:**
+2.  **Use Few-Shot Prompting to refactor `get_product`:**
     Your goal is to make the functions return a JSON object like `{"status": "success", "data": "..."}` or `{"status": "error", "message": "..."}`.
 
-    Craft a prompt that first shows Gemini an example of how you would refactor `get_user`, and then asks it to refactor `get_product` in the same style.
+    Craft a prompt that first shows Gemini an example of how you would refactor a similar function, and then asks it to refactor `get_product` in the same style.
 
     **Example Prompt Idea:**
-    ```
-    I want to refactor my Python functions to return a consistent JSON response.
-
-    # --- BEFORE ---
-    def get_user(user_id):
-        if user_id == 1:
-            return "Alice"
-        return "User not found"
-
-    # --- AFTER ---
-    import json
-
-    def get_user(user_id):
-        if user_id == 1:
-            return json.dumps({"status": "success", "data": "Alice"})
-        return json.dumps({"status": "error", "message": "User not found"})
-
-    ---
-
     ```bash
-    gemini refactor --file practice/user_service.py --prompt "$(cat << 'EOF'
-    I want to refactor my Python functions to return a consistent JSON response.
+    gemini "$(cat << 'EOF'
+I need to refactor a function in the file `practice/user_service.py`.
 
-    # --- BEFORE ---
-    def get_user(user_id):
-        if user_id == 1:
-            return "Alice"
-        return "User not found"
+My goal is to make my Python functions return a consistent JSON response. Here is an example of the pattern I want to follow:
 
-    # --- AFTER ---
-    import json
+# --- PATTERN EXAMPLE: BEFORE ---
+def get_user(user_id):
+    if user_id == 1:
+        return "Alice"
+    return "User not found"
 
-    def get_user(user_id):
-        if user_id == 1:
-            return json.dumps({"status": "success", "data": "Alice"})
-        return json.dumps({"status": "error", "message": "User not found"})
+# --- PATTERN EXAMPLE: AFTER ---
+import json
 
-    ---
+def get_user(user_id):
+    if user_id == 1:
+        return json.dumps({"status": "success", "data": "Alice"})
+    return json.dumps({"status": "error", "message": "User not found"})
 
-    Now, apply the exact same refactoring pattern to the `get_product` function in the file `practice/user_service.py`.
-    EOF
-    )"
+---
+
+Now, using this exact pattern, please refactor the `get_product` function in `practice/user_service.py`.
+EOF
+)"
     ```
 
 3.  **Review and verify** the output in `practice/user_service.py`. It should have correctly refactored `get_product`.
@@ -102,27 +85,20 @@ You have a Python function that might be inefficient. You want to get an expert 
     ```
 
 2.  **Use Role-Based Prompting to get a review:**
-    Craft a prompt where you assign Gemini the role of an expert Python developer or performance analyst. Ask it to review the `find_common_elements` function and suggest a more efficient implementation.
+    Craft a prompt where you assign Gemini the role of an expert Python developer and ask it to review and improve the `find_common_elements` function.
 
     **Example Prompt Idea:**
-    ```
-    You are an expert Python developer specializing in code optimization.
-    Review the function `find_common_elements` in the file `practice/user_service.py`.
-
-    1.  Explain why the current implementation is inefficient.
-    2.  Suggest a more performant alternative and explain why it's better.
-    3.  Replace the existing function with your improved version.
-    ```
     ```bash
-    gemini refactor --file practice/user_service.py --prompt "$(cat << 'EOF'
-    You are an expert Python developer specializing in code optimization.
-    Review the function `find_common_elements` in the file `practice/user_service.py`.
+    gemini "$(cat << 'EOF'
+You are an expert Python developer specializing in code optimization.
+Please review the function `find_common_elements` in the file `practice/user_service.py`.
 
-    1.  Explain why the current implementation is inefficient.
-    2.  Suggest a more performant alternative and explain why it's better.
-    3.  Replace the existing function with your improved version.
-    EOF
-    )"
+Your task:
+1.  Explain why the current implementation is inefficient.
+2.  Suggest a more performant alternative and explain why it's better.
+3.  Replace the existing function in `practice/user_service.py` with your improved version, including the explanation as comments within the file.
+EOF
+)"
     ```
 
 3.  **Review the result.** Gemini should have replaced the nested loop with a more efficient solution (e.g., using sets) and possibly added comments explaining the change, based on your prompt.

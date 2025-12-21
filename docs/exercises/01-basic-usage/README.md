@@ -33,9 +33,9 @@ Your task is to use Gemini to refactor this script into a cleaner, more modular 
     *   Remove global variables and pass `length` and `width` as function arguments.
     *   Add a main execution block (`if __name__ == "__main__":`).
 
-    Example prompt idea (adjust as needed for actual Gemini CLI syntax):
+    Example prompt idea:
     ```bash
-    gemini refactor --file practice/rectangle_calculator.py --prompt "Refactor this Python script to use functions for calculating area and perimeter, passing length and width as arguments, and include a main execution block. The functions should be named calculate_area and calculate_perimeter."
+    gemini "In the file `practice/rectangle_calculator.py`, refactor the script to use functions for calculating area and perimeter. The functions should be named calculate_area and calculate_perimeter, and should accept length and width as arguments. Also, add a main execution block (`if __name__ == '__main__':`) to call these functions and print the results."
     ```
 
 3.  **Review Gemini's output:**

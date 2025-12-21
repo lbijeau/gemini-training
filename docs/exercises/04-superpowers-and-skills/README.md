@@ -17,14 +17,10 @@ You are working on a feature that requires a placeholder image for a user avatar
     Ask Gemini to generate a simple, minimalist avatar. You'll specify the content, dimensions, and output path.
 
     **Example Prompt Idea:**
-    ```
-    Generate a 128x128 pixel placeholder image for a user avatar. It should be a minimalist, abstract face shape with a soft gradient background, in a flat-icon style. Save it to `assets/placeholder_avatar.png`.
-    ```
-    *(Execute this prompt with the Gemini CLI. The command might look something like this, assuming a `gemini generate-asset` subcommand or a direct prompt that triggers the asset generation capability):*
-
     ```bash
-    gemini generate-asset --output assets/placeholder_avatar.png --width 128 --height 128 --style flat-icon --prompt "minimalist, abstract face shape with a soft gradient background"
+    gemini "Generate a 128x128 pixel placeholder image for a user avatar. It should be a minimalist, abstract face shape with a soft gradient background, in a flat-icon style. Save it to `assets/placeholder_avatar.png`."
     ```
+    *(Note: This assumes Gemini is configured with an asset generation skill that understands this type of prompt.)*
 
 3.  **Verify the output:**
     Check the `assets/` directory to confirm that `placeholder_avatar.png` has been created. You can open it to see the generated image.

@@ -1,138 +1,89 @@
 # Gemini CLI Command Reference
 
-This document provides a comprehensive reference for all available Gemini CLI commands, their options, and usage examples.
+This document provides a comprehensive reference for the Gemini CLI, based on its help output. The primary interaction model is a single, conversational entry point with flags to modify its behavior.
 
 ---
 
-## 1. `gemini generate`
+## Basic Usage
 
-Generates new code based on a prompt.
-
-**Usage:**
+### Interactive Mode
+To launch Gemini in a fully interactive CLI session, simply run the command without any arguments:
 ```bash
-gemini generate --output <file_path> --prompt "<your_prompt>"
+gemini
 ```
 
-**Arguments:**
-
-*   `--output, -o <file_path>` (optional): The file to write the generated code to. If not provided, the output will be printed to standard output.
-*   `--prompt, -p <string>` (required): The natural language prompt describing the code you want to generate.
-
+### One-Shot (Non-Interactive) Mode
+To ask a single question and receive a response without entering an interactive session, provide your query as a positional argument:
+```bash
+gemini "your query here"
+```
 **Example:**
 ```bash
-# Generate a Python function and save it to a file
-gemini generate -o practice/my_function.py -p "write a python function that calculates the square of a number"
-```
-
----
-
-## 2. `gemini refactor`
-
-Modifies existing code in a file based on a prompt.
-
-**Usage:**
-```bash
-gemini refactor --file <file_path> --prompt "<your_prompt>"
-```
-
-**Arguments:**
-
-*   `--file, -f <file_path>` (required): The path to the file you want to refactor. The file will be modified in-place.
-*   `--prompt, -p <string>` (required): The natural language prompt describing the desired refactoring.
-
-**Example:**
-```bash
-# Refactor a Python script to use list comprehension
-gemini refactor -f practice/my_script.py -p "refactor this code to use a more idiomatic list comprehension"
+gemini "Write a Python function to calculate the square of a number and print it to the console."
 ```
 
 ---
 
-## 3. `gemini explain`
+## Key Options
 
-Explains a piece of code.
+These flags modify the CLI's behavior.
 
-**Usage:**
-```bash
-gemini explain --file <file_path> --prompt "<your_prompt>"
-```
+### Prompting and Interaction
 
-**Arguments:**
+*   `[query..]` (Positional Argument): The most common way to provide a prompt for non-interactive use.
+*   `-i, --prompt-interactive <string>`: Executes the provided prompt and then enters an interactive session.
+*   `-p, --prompt <string>` (**Deprecated**): An older way to provide a prompt. It is recommended to use the positional `[query..]` argument instead.
 
-*   `--file, -f <file_path>` (required): The file containing the code you want to be explained.
-*   `--prompt, -p <string>` (required): A prompt specifying what part of the code you want explained (e.g., "Explain the `my_function` function").
+### Execution Control
 
-**Example:**
-```bash
-# Get an explanation of a complex regex in a file
-gemini explain -f practice/validator.py -p "Explain the regular expression in the is_valid_email function"
-```
+*   `-s, --sandbox`: Runs the command in a sandbox environment for safety.
+*   `-y, --yolo`: **(Use with caution)** Automatically accepts all actions without prompting for confirmation.
+*   `--approval-mode <mode>`: Sets the approval behavior.
+    *   `default`: Prompt for approval on actions.
+    *   `auto_edit`: Automatically approve tools that only edit files.
+    *   `yolo`: Automatically approve all tools.
 
----
+### Session Management
 
-## 4. `gemini fix`
+*   `-r, --resume <session>`: Resumes a previous session. Use `"latest"` for the most recent session or a number from the session list.
+*   `--list-sessions`: Lists all available sessions for the current project.
+*   `--delete-session <session_index>`: Deletes a specific session by its index number.
 
-Identifies and fixes bugs in a piece of code.
+### Model and Output
 
-**Usage:**
-```bash
-gemini fix --file <file_path> --prompt "<your_prompt>"
-```
+*   `-m, --model <string>`: Specifies the model to use for the session.
+*   `-o, --output-format <format>`: Sets the format of the CLI output (`text`, `json`, or `stream-json`).
 
-**Arguments:**
+### Extensions and Tools
 
-*   `--file, -f <file_path>` (required): The path to the file containing the buggy code. The file will be modified in-place.
-*   `--prompt, -p <string>` (required): A prompt describing the bug or the unexpected behavior.
-
-**Example:**
-```bash
-# Fix a function that is producing an incorrect result
-gemini fix -f practice/buggy_code.py -p "The factorial function is giving the wrong output for the input 5. It should be 120."
-```
+*   `-e, --extensions <list>`: A list of specific extensions to use for the session.
+*   `-l, --list-extensions`: Lists all available extensions and exits.
 
 ---
 
-## 5. `gemini use-skill`
+## Commands
 
-Invokes a custom Gemini Skill (Superpower).
+While the main interaction is the positional query, there are a few dedicated commands for management.
 
-**Usage:**
-```bash
-gemini use-skill <skill_name> [skill_arguments...]
-```
+### `gemini mcp`
+*   **Purpose:** Manage MCP (Multi-Capability Provider) servers.
+*   **Usage:** `gemini mcp` (Further subcommands would be detailed by `gemini mcp --help`).
 
-**Arguments:**
+### `gemini extensions <command>`
+*   **Purpose:** Manage Gemini CLI extensions.
+*   **Usage:**
+    ```bash
+    # List all extensions
+    gemini extensions list
 
-*   `<skill_name>` (required): The name of the skill to invoke.
-*   `[skill_arguments...]` (optional): Any arguments or flags that the specific skill accepts.
-
-**Example:**
-```bash
-# Use a custom skill named 'my-echo-skill'
-gemini use-skill my-echo-skill --message "Hello from my custom skill!"
-```
+    # (Other subcommands like 'add', 'remove' would be detailed by 'gemini extensions --help')
+    ```
 
 ---
+## Example Combining Options
 
-## 6. `gemini generate-asset`
-
-Generates non-code assets, like images or diagrams, using a skill.
-
-**Usage:**
+Here's an example of a more complex, non-interactive command:
 ```bash
-gemini generate-asset --output <file_path> --width <pixels> --height <pixels> --style <style_name> --prompt "<your_prompt>"
-```
-
-**Arguments:**
-
-*   `--output, -o <file_path>` (required): The file to save the generated asset to.
-*   `--width <pixels>` (optional): The width of the asset in pixels.
-*   `--height <pixels>` (optional): The height of the asset in pixels.
-*   `--style <style_name>` (optional): A style preset (e.g., `flat-icon`, `photorealistic`).
-*   `--prompt, -p <string>` (required): A prompt describing the desired asset.
-
-**Example:**
-```bash
-# Generate a placeholder avatar image
-gemini generate-asset -o assets/avatar.png --width 128 --height 128 --style flat-icon -p "minimalist abstract face"
+# Ask Gemini to refactor a file using a specific model and running in a sandbox
+gemini -s -m "gemini-pro" "Please refactor the Python script in 'my_app/utils.py' to be more efficient. Specifically, optimize the 'process_data' function."
 ```

@@ -37,11 +37,8 @@ You've encountered a piece of Python code that uses a regular expression to vali
     Craft a prompt that asks Gemini to explain the regular expression in the `is_valid_email` function.
 
     **Example Prompt Idea:**
-    ```
-    In the file `practice/validator.py`, please explain the regular expression pattern used in the `is_valid_email` function. Break down each part of the regex and explain what it matches.
-    ```
     ```bash
-    gemini explain --file practice/validator.py --prompt "Explain the regular expression pattern used in the `is_valid_email` function. Break down each part of the regex and explain what it matches."
+    gemini "In the file `practice/validator.py`, please explain the regular expression pattern used in the `is_valid_email` function. Break down each part of the regex and explain what it matches. Respond in the console."
     ```
 
 3.  **Review the explanation:**
@@ -82,18 +79,13 @@ You have a function that is supposed to find the factorial of a number, but it's
     Craft a prompt that describes the problem (incorrect output) and asks Gemini to identify and fix the bug.
 
     **Example Prompt Idea:**
-    ```
-    The function `factorial` in `practice/buggy_factorial.py` is not working correctly. When I run it with an input of 5, it produces the wrong result. The expected answer is 120.
-
-    Please identify the bug in the function, explain what is wrong, and fix the code directly in the file.
-    ```
     ```bash
-    gemini fix --file practice/buggy_factorial.py --prompt "$(cat << 'EOF'
-    The function `factorial` in `practice/buggy_factorial.py` is not working correctly. When I run it with an input of 5, it produces the wrong result. The expected answer is 120.
+    gemini "$(cat << 'EOF'
+The function `factorial` in `practice/buggy_factorial.py` is not working correctly. When I run it with an input of 5, it produces the wrong result. The expected answer is 120.
 
-    Please identify the bug in the function, explain what is wrong, and fix the code directly in the file.
-    EOF
-    )"
+Please identify the bug in the function, explain what is wrong, and fix the code directly in the file.
+EOF
+)"
     ```
 
 3.  **Review and verify the fix:**

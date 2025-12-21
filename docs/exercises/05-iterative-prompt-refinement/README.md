@@ -19,7 +19,7 @@ You need Gemini to write a Python function that calculates the nth Fibonacci num
 
 2.  **Ask Gemini to write the function with a general prompt:**
     ```bash
-    gemini generate --output practice/fibonacci.py --prompt "Write a Python function to calculate the nth Fibonacci number."
+    gemini "Write a Python function to calculate the nth Fibonacci number. Place it in a new file named `practice/fibonacci.py`."
     ```
 
 3.  **Review the output (First Iteration):**
@@ -34,9 +34,9 @@ Let's assume Gemini's first attempt was recursive and you wanted an iterative so
 
 1.  **Modify your prompt** to add this constraint. You might also ask it to include documentation.
     ```bash
-    gemini generate --output practice/fibonacci.py --prompt "Write an *iterative* Python function to calculate the nth Fibonacci number. Include a docstring explaining the function, its parameters, and what it returns."
+    gemini "In the file `practice/fibonacci.py`, please replace the existing function with a new, *iterative* version that calculates the nth Fibonacci number. Also, include a docstring explaining the function, its parameters, and what it returns."
     ```
-    *Note: Gemini might overwrite the previous file. If you want to keep previous versions, use a different output file or move the old one.*
+    *Note: By explicitly telling Gemini to modify the file, you guide it to perform an in-place edit.*
 
 2.  **Review the output (Second Iteration):**
     Check `practice/fibonacci.py` again. Has it addressed your new requirements? Is it iterative? Does it have a docstring?
@@ -47,7 +47,7 @@ Let's say the iterative solution is good, but you realize it doesn't handle nega
 
 1.  **Modify your prompt further.**
     ```bash
-    gemini generate --output practice/fibonacci.py --prompt "Refine the existing Python function to calculate the nth Fibonacci number. Ensure it's iterative, includes a docstring, and raises a ValueError if 'n' is a negative number. Add type hints for 'n' (int) and the return value (int)."
+    gemini "Refine the existing function in `practice/fibonacci.py`. Ensure it raises a ValueError if 'n' is a negative number and add type hints for the 'n' parameter (int) and the return value (int)."
     ```
 
 2.  **Review the output (Final Iteration):**

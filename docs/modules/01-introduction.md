@@ -20,8 +20,11 @@ Interacting with Gemini typically involves the following steps, which can be vis
 
 1.  **Define Your Goal:** Clearly articulate what you want Gemini to do. The more specific your prompt, the better the result.
 2.  **Provide Context:** If Gemini needs to operate on existing code, make sure to provide the relevant files or code snippets.
-3.  **Execute the Command:** Use the appropriate Gemini CLI command (e.g., `gemini generate`, `gemini refactor`) with your prompt and context.
-4.  **Review and Refine:** Always review Gemini's output. It might be perfect, or it might require slight adjustments from you, or further iteration with Gemini.
+3.  **Execute the Command:** Use the `gemini` command followed by your detailed, conversational prompt.
+    ```bash
+    gemini "Your detailed request here, mentioning files and desired actions."
+    ```
+4.  **Review and Refine:** Always review Gemini's output. It might be perfect, or it might require slight adjustments from you, or a follow-up prompt to iterate on the changes.
 
 ## Crafting Effective Prompts
 
