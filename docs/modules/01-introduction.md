@@ -14,7 +14,9 @@ The Gemini CLI is designed to be an intelligent coding partner. It can assist wi
 
 ## Key Interaction Patterns
 
-Interacting with Gemini typically involves the following steps:
+Interacting with Gemini typically involves the following steps, which can be visualized as a cycle:
+
+![Gemini Interaction Flow](../diagrams/gemini-interaction-flow.png)
 
 1.  **Define Your Goal:** Clearly articulate what you want Gemini to do. The more specific your prompt, the better the result.
 2.  **Provide Context:** If Gemini needs to operate on existing code, make sure to provide the relevant files or code snippets.
