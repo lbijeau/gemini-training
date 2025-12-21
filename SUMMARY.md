@@ -2,6 +2,14 @@
 
 This file provides a table of contents for the Gemini Training repository, making it easy to navigate through the modules and exercises.
 
+## Personas
+
+*   **[Nina the Newcomer](docs/personas/nina-the-newcomer.md)**
+    *   A developer who is new to AI code assistants.
+
+*   **[Alex the Advanced User](docs/personas/alex-the-advanced-user.md)**
+    *   An experienced developer who wants to master advanced features.
+
 ## Modules
 
 *   **[01 - Introduction to Gemini CLI Capabilities](docs/modules/01-introduction.md)**
