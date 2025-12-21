@@ -24,6 +24,9 @@ This file provides a table of contents for the Gemini Training repository, makin
 *   **[03 - Best Practices for Working with Gemini](docs/modules/03-best-practices.md)**
     *   Key recommendations and workflows for effective collaboration with Gemini.
 
+*   **[04 - Superpowers and Skills: Extending Gemini's Capabilities](docs/modules/04-superpowers-and-skills.md)**
+    *   Understand how to extend Gemini's functionality with custom tools and workflows.
+
 ## Exercises
 
 *   **[Exercise 01: Basic Usage - Refactoring a Python Script](docs/exercises/01-basic-usage/README.md)**
@@ -34,3 +37,6 @@ This file provides a table of contents for the Gemini Training repository, makin
 
 *   **[Exercise 03: Code Explanation and Debugging](docs/exercises/03-code-explanation/README.md)**
     *   Use Gemini to understand complex code and fix bugs in a pre-written script.
+
+*   **[Exercise 04: Using a Simple Superpower](docs/exercises/04-superpowers-and-skills/README.md)**
+    *   Learn to leverage Gemini's extended capabilities by using a custom superpower to generate assets.
