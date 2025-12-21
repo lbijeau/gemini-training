@@ -40,9 +40,9 @@ Let's start with a simple task: asking Gemini to write a "Hello, World!" functio
     ```
 2.  **Run Gemini CLI** with a prompt to generate the function. (This command is illustrative and depends on the actual Gemini CLI usage).
     ```bash
-    gemini generate --file practice/hello_world_gemini.py "write a python function named hello_world that prints 'Hello, Gemini!'"
+    gemini generate --output practice/hello_world_gemini.py --prompt "write a python function named hello_world that prints 'Hello, Gemini!'"
     ```
-    (Adjust the command based on the actual Gemini CLI syntax).
+    *Note: The exact command syntax may vary based on your Gemini CLI installation. This is a hypothetical example.*
 
 3.  **Inspect the generated code:**
     Open `practice/hello_world_gemini.py` to see the function Gemini generated.

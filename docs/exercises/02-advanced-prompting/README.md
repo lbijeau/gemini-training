@@ -54,9 +54,30 @@ You have a Python script with functions that return simple strings. You want to 
 
     ---
 
+    ```bash
+    gemini refactor --file practice/user_service.py --prompt "$(cat << 'EOF'
+    I want to refactor my Python functions to return a consistent JSON response.
+
+    # --- BEFORE ---
+    def get_user(user_id):
+        if user_id == 1:
+            return "Alice"
+        return "User not found"
+
+    # --- AFTER ---
+    import json
+
+    def get_user(user_id):
+        if user_id == 1:
+            return json.dumps({"status": "success", "data": "Alice"})
+        return json.dumps({"status": "error", "message": "User not found"})
+
+    ---
+
     Now, apply the exact same refactoring pattern to the `get_product` function in the file `practice/user_service.py`.
+    EOF
+    )"
     ```
-    *(Execute this prompt with the Gemini CLI, targeting `practice/user_service.py`)*
 
 3.  **Review and verify** the output in `practice/user_service.py`. It should have correctly refactored `get_product`.
 
@@ -92,7 +113,17 @@ You have a Python function that might be inefficient. You want to get an expert 
     2.  Suggest a more performant alternative and explain why it's better.
     3.  Replace the existing function with your improved version.
     ```
-    *(Execute this prompt with the Gemini CLI, targeting `practice/user_service.py`)*
+    ```bash
+    gemini refactor --file practice/user_service.py --prompt "$(cat << 'EOF'
+    You are an expert Python developer specializing in code optimization.
+    Review the function `find_common_elements` in the file `practice/user_service.py`.
+
+    1.  Explain why the current implementation is inefficient.
+    2.  Suggest a more performant alternative and explain why it's better.
+    3.  Replace the existing function with your improved version.
+    EOF
+    )"
+    ```
 
 3.  **Review the result.** Gemini should have replaced the nested loop with a more efficient solution (e.g., using sets) and possibly added comments explaining the change, based on your prompt.
 

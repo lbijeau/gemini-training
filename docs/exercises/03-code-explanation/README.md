@@ -40,7 +40,9 @@ You've encountered a piece of Python code that uses a regular expression to vali
     ```
     In the file `practice/validator.py`, please explain the regular expression pattern used in the `is_valid_email` function. Break down each part of the regex and explain what it matches.
     ```
-    *(Execute this prompt with the Gemini CLI, targeting `practice/validator.py`. You can ask Gemini to add the explanation as comments in the file or just output it to the console.)*
+    ```bash
+    gemini explain --file practice/validator.py --prompt "Explain the regular expression pattern used in the `is_valid_email` function. Break down each part of the regex and explain what it matches."
+    ```
 
 3.  **Review the explanation:**
     Read Gemini's response. Does it clearly explain the different components of the regex?
@@ -85,7 +87,14 @@ You have a function that is supposed to find the factorial of a number, but it's
 
     Please identify the bug in the function, explain what is wrong, and fix the code directly in the file.
     ```
-    *(Execute this prompt with the Gemini CLI, targeting `practice/buggy_factorial.py`)*
+    ```bash
+    gemini fix --file practice/buggy_factorial.py --prompt "$(cat << 'EOF'
+    The function `factorial` in `practice/buggy_factorial.py` is not working correctly. When I run it with an input of 5, it produces the wrong result. The expected answer is 120.
+
+    Please identify the bug in the function, explain what is wrong, and fix the code directly in the file.
+    EOF
+    )"
+    ```
 
 3.  **Review and verify the fix:**
     *   Check the code in `practice/buggy_factorial.py`. Gemini should have corrected the `range` in the loop.

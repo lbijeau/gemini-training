@@ -35,7 +35,7 @@ Your task is to use Gemini to refactor this script into a cleaner, more modular 
 
     Example prompt idea (adjust as needed for actual Gemini CLI syntax):
     ```bash
-    gemini refactor --file practice/rectangle_calculator.py "Refactor this Python script to use functions for calculating area and perimeter, passing length and width as arguments, and include a main execution block. The functions should be named calculate_area and calculate_perimeter."
+    gemini refactor --file practice/rectangle_calculator.py --prompt "Refactor this Python script to use functions for calculating area and perimeter, passing length and width as arguments, and include a main execution block. The functions should be named calculate_area and calculate_perimeter."
     ```
 
 3.  **Review Gemini's output:**
