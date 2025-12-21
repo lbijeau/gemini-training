@@ -16,4 +16,4 @@ This repository provides detailed information and practical guidance on effectiv
 
 ## Contributing
 
-We welcome contributions! Please see our `CONTRIBUTING.md` (to be created) for guidelines.
+We welcome contributions! Please see our [`CONTRIBUTING.md`](CONTRIBUTING.md) for guidelines.

@@ -19,6 +19,16 @@ When you install an extension, Gemini gains access to its **Tools**. When you as
 *   **Tool Selection:** If your prompt matches a tool's capability (e.g., the `generate_image` tool from an Asset Generator extension), Gemini selects it.
 *   **Execution:** Gemini runs the tool and returns the result (the image).
 
+## Under the Hood: How It Works
+
+For the technically curious, Gemini uses the **Model Context Protocol (MCP)** to standardize these interactions.
+
+1.  **Discovery:** When Gemini starts, it reads the `gemini-extension.json` manifests of all installed extensions. It builds a catalog of available tools (e.g., `asset-generator:generate_image`, `database:query`).
+2.  **Context Injection:** A condensed list of these tools (names and descriptions) is invisibly injected into the system prompt. This tells the LLM, "You have these tools available."
+3.  **The Handshake:** When you ask for an image, the LLM outputs a structured "Tool Call" request instead of plain text.
+4.  **The Bridge:** The Gemini CLI intercepts this request, runs the corresponding code in the Extension (which runs as a separate process), and feeds the result back to the LLM.
+5.  **Security:** Extensions run locally on your machine. You explicitly install them, giving you control over what "superpowers" your AI has access to.
+
 ## Example: The Asset Generator
 
 We've used an extension already! When we generated the logo for this repository, we were using an extension that provided an `asset-generator` tool.
@@ -38,4 +48,4 @@ You can manage extensions using the `gemini extensions` command group.
 ## Next Steps
 
 In the next exercise, you will use an installed extension to perform a task. Later, in Module 05, you will learn how to build your own!
-*   `docs/exercises/04-using-extensions/` (to be created)
+*   [Exercise 04: Using an Extension](../exercises/04-using-extensions/README.md)
