@@ -4,7 +4,13 @@
 
 ## Related Issues
 
-<!-- Link issues using "Fixes #123" to auto-close when merged -->
+<!-- Link issues using "Fixes #123" to auto-close when merged.
+     For multiple issues, use separate lines (not comma-separated)
+     so GitHub Projects shows the PR link on each issue card:
+
+     Fixes #123
+     Fixes #456
+-->
 
 Fixes #
 
