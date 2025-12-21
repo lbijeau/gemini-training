@@ -29,7 +29,7 @@ This file provides a table of contents for the Gemini Training repository, makin
 *   **[03 - Best Practices for Working with Gemini](docs/modules/03-best-practices.md)**
     *   Key recommendations and workflows for effective collaboration with Gemini.
 
-*   **[04 - Superpowers and Skills: Extending Gemini's Capabilities](docs/modules/04-superpowers-and-skills.md)**
+*   **[04 - Extensions: Expanding Gemini's Capabilities](docs/modules/04-extensions-overview.md)**
     *   Understand how to extend Gemini's functionality with custom tools and workflows.
 
 *   **[05 - Authoring Gemini Extensions](docs/modules/05-authoring-extensions.md)**
@@ -55,8 +55,8 @@ This file provides a table of contents for the Gemini Training repository, makin
 *   **[Exercise 03: Code Explanation and Debugging](docs/exercises/03-code-explanation/README.md)**
     *   Use Gemini to understand complex code and fix bugs in a pre-written script.
 
-*   **[Exercise 04: Using a Simple Superpower](docs/exercises/04-superpowers-and-skills/README.md)**
-    *   Learn to leverage Gemini's extended capabilities by using a custom superpower to generate assets.
+*   **[Exercise 04: Using an Extension](docs/exercises/04-using-extensions/README.md)**
+    *   Learn to leverage Gemini's extended capabilities by using a custom extension to generate assets.
 
 *   **[Exercise 05: Iterative Prompt Refinement - The "Review, Refine, Re-prompt" Cycle](docs/exercises/05-iterative-prompt-refinement/README.md)**
     *   Practice refining prompts iteratively to achieve desired outcomes.
