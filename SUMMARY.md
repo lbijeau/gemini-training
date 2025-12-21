@@ -10,6 +10,9 @@ This file provides a table of contents for the Gemini Training repository, makin
 *   **[Alex the Advanced User](docs/personas/alex-the-advanced-user.md)**
     *   An experienced developer who wants to master advanced features.
 
+*   **[Ravi the Reviewer](docs/personas/ravi-the-reviewer.md)**
+    *   An expert on Gemini and training material, ensuring quality and accuracy.
+
 ## Modules
 
 *   **[01 - Introduction to Gemini CLI Capabilities](docs/modules/01-introduction.md)**
