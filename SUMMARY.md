@@ -13,6 +13,11 @@ This file provides a table of contents for the Gemini Training repository, makin
 *   **[Ravi the Reviewer](docs/personas/ravi-the-reviewer.md)**
     *   An expert on Gemini and training material, ensuring quality and accuracy.
 
+## Reference
+
+*   **[CLI Command Reference](docs/reference/cli-reference.md)**
+    *   A comprehensive guide to all Gemini CLI commands and their options.
+
 ## Modules
 
 *   **[01 - Introduction to Gemini CLI Capabilities](docs/modules/01-introduction.md)**
