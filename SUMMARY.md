@@ -40,3 +40,6 @@ This file provides a table of contents for the Gemini Training repository, makin
 
 *   **[Exercise 04: Using a Simple Superpower](docs/exercises/04-superpowers-and-skills/README.md)**
     *   Learn to leverage Gemini's extended capabilities by using a custom superpower to generate assets.
+
+*   **[Exercise 05: Iterative Prompt Refinement - The "Review, Refine, Re-prompt" Cycle](docs/exercises/05-iterative-prompt-refinement/README.md)**
+    *   Practice refining prompts iteratively to achieve desired outcomes.
