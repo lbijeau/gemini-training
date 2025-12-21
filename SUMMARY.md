@@ -27,6 +27,9 @@ This file provides a table of contents for the Gemini Training repository, makin
 *   **[04 - Superpowers and Skills: Extending Gemini's Capabilities](docs/modules/04-superpowers-and-skills.md)**
     *   Understand how to extend Gemini's functionality with custom tools and workflows.
 
+*   **[05 - Authoring Your Own Gemini Skills (Superpowers)](docs/modules/05-authoring-a-skill.md)**
+    *   Learn the fundamentals of creating custom skills to extend Gemini's capabilities.
+
 ## Exercises
 
 *   **[Exercise 01: Basic Usage - Refactoring a Python Script](docs/exercises/01-basic-usage/README.md)**
@@ -43,3 +46,6 @@ This file provides a table of contents for the Gemini Training repository, makin
 
 *   **[Exercise 05: Iterative Prompt Refinement - The "Review, Refine, Re-prompt" Cycle](docs/exercises/05-iterative-prompt-refinement/README.md)**
     *   Practice refining prompts iteratively to achieve desired outcomes.
+
+*   **[Exercise 06: Authoring Your First Gemini Skill (Superpower)](docs/exercises/06-authoring-a-skill/README.md)**
+    *   A hands-on guide to creating a basic custom Gemini skill from scratch.
