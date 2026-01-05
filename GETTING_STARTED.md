@@ -25,12 +25,18 @@ Before installing Gemini CLI, ensure you have the following installed:
     git clone https://github.com/your-username/gemini-training.git
     cd gemini-training
     ```
-2.  **Install Gemini CLI (if not already installed):**
-    ```bash
-    pip install gemini-cli # Replace with actual installation command
-    ```
+2.  **Install Gemini CLI:**
+    Ensure the `gemini` command line tool is installed and available in your system PATH.
+    *   *Note: Installation methods vary by distribution (e.g., `npm`, `pip`, `brew`, or binary download). Please refer to the official documentation for your specific version of the Gemini CLI.*
+
 3.  **Configure your API Key:**
-    Follow the official Gemini CLI documentation to set up your API key. This typically involves setting an environment variable or configuring a `~/.gemini/config.json` file. (Provide a link to actual docs when available).
+    Set up your authentication as required by your installation (typically by setting an environment variable like `GEMINI_API_KEY` or `GOOGLE_API_KEY`).
+
+4.  **Verify Installation:**
+    Check that the tool is ready:
+    ```bash
+    gemini --help
+    ```
 
 ## 3. First Interaction: "Hello, World!" Function
 
