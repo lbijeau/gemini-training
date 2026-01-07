@@ -16,4 +16,22 @@ This repository provides detailed information and practical guidance on effectiv
 
 ## Contributing
 
+
+
 We welcome contributions! Please see our [`CONTRIBUTING.md`](CONTRIBUTING.md) for guidelines.
+
+
+
+## Disclaimer
+
+
+
+This is an independent community-led training project. It is not an official Google or Alphabet product, nor is it affiliated with, sponsored by, or endorsed by Google or Alphabet. "Gemini" is a trademark of Google LLC.
+
+
+
+## License
+
+
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
