@@ -47,6 +47,15 @@ export default defineConfig({
           ]
         },
         {
+          text: 'Cookbook',
+          items: [
+            { text: 'Unit Testing', link: '/docs/recipes/unit-testing' },
+            { text: 'Refactoring', link: '/docs/recipes/refactoring' },
+            { text: 'Documentation', link: '/docs/recipes/documentation' },
+            { text: 'Debugging', link: '/docs/recipes/debugging' }
+          ]
+        },
+        {
           text: 'Reference',
           items: [
             { text: 'CLI Commands', link: '/reference/cli-reference' }
