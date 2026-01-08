@@ -1,6 +1,6 @@
 # 01 - Introduction to Gemini CLI Capabilities
 
-This module expands on the foundational concepts introduced in the **Getting Started guide**, providing a deeper dive into the core capabilities and interaction patterns of the Gemini CLI.
+This module expands on the foundational concepts introduced in the **[Getting Started guide](../getting-started.md)**, providing a deeper dive into the core capabilities and interaction patterns of the Gemini CLI.
 
 ## Understanding Gemini's Role
 
