@@ -50,6 +50,10 @@ export default defineConfig({
     },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/lbijeau/gemini-training' }
-    ]
+    ],
+    footer: {
+      message: 'This is an independent community project. Not affiliated with or endorsed by Google.',
+      copyright: 'Copyright © 2026-present Luc Bijeau. Gemini is a trademark of Google LLC.'
+    }
   }
 })
