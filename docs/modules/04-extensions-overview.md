@@ -59,7 +59,21 @@ For the technically curious, Gemini uses the **Model Context Protocol (MCP)** to
 2.  **Context Injection:** A condensed list of these tools (names and descriptions) is invisibly injected into the system prompt. This tells the LLM, "You have these tools available."
 3.  **The Handshake:** When you ask for an image, the LLM outputs a structured "Tool Call" request instead of plain text.
 4.  **The Bridge:** The Gemini CLI intercepts this request, runs the corresponding code in the Extension (which runs as a separate process), and feeds the result back to the LLM.
-5.  **Security:** Extensions run locally on your machine. You explicitly install them, giving you control over what capabilities your AI has access to.
+5.  **Security & Privacy:** You have full control over what capabilities your AI has access to. There are two primary types of connections:
+    *   **Local Tools:** Most extensions run as local processes on your machine. Your data stays in your environment, and the tools have the same permissions as your user.
+    *   **Remote Tools:** Gemini can also connect to remote MCP servers via a URL (using SSE). In this case, relevant context may be sent to the remote service to perform the requested action. Always verify the trustworthiness of remote MCP providers.
+
+## Local vs. Remote MCP
+
+Depending on your use case, you might choose to run an MCP server locally or connect to a hosted service.
+
+| Feature | Local (stdio) | Remote (SSE/URL) |
+| :--- | :--- | :--- |
+| **Privacy** | High (Data stays on your machine) | Variable (Data sent to provider) |
+| **Setup** | Requires local runtime (Node/Python) | Just a URL |
+| **Resources** | Uses your local CPU/RAM | Uses remote server resources |
+| **Access** | Can access your local file system | Restricted to provided API |
+| **Reliability** | Works offline | Requires internet connection |
 
 ## Example: The Asset Generator
 
