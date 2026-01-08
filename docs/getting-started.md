@@ -27,7 +27,7 @@ Before installing Gemini CLI, ensure you have the following installed:
     ```
 2.  **Install Gemini CLI:**
     Ensure the `gemini` command line tool is installed and available in your system PATH.
-    *   *Note: Installation methods vary by distribution (e.g., `npm`, `pip`, `brew`, or binary download). Please refer to the official documentation for your specific version of the Gemini CLI.*
+    *   *Note: Installation methods vary by distribution (e.g., `npm`, `pip`, `brew`, or binary download). Please refer to the **[Official Gemini CLI Documentation](https://geminicli.com)** or the **[GitHub Repository](https://github.com/google-gemini/gemini-cli)** for your specific version.*
 
 3.  **Configure your API Key:**
     Set up your authentication as required by your installation (typically by setting an environment variable like `GEMINI_API_KEY` or `GOOGLE_API_KEY`).
