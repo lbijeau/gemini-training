@@ -1,4 +1,4 @@
-# Exercise 05: Iterative Prompt Refinement - The "Review, Refine, Re-prompt" Cycle
+# Exercise 03: Iterative Prompt Refinement - The "Review, Refine, Re-prompt" Cycle
 
 ## Objective
 

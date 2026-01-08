@@ -53,4 +53,4 @@ Review the code in {{args}} against our style guide:
 ## Next Steps
 
 Head to the exercise to build your own custom command.
-*   **[Exercise 08: Creating a Custom Command](../exercises/08-creating-custom-commands/README.md)**
+*   **[Exercise 07: Creating a Custom Command](../exercises/07-creating-custom-commands/README.md)**

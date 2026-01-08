@@ -1,4 +1,4 @@
-# Exercise 09: Context Mastery with GEMINI.md
+# Exercise 08: Context Mastery with GEMINI.md
 
 ## Objective
 

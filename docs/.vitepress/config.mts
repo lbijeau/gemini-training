@@ -38,13 +38,12 @@ export default withMermaid(defineConfig({
           items: [
             { text: '01. Basic Usage', link: '/exercises/01-basic-usage/README' },
             { text: '02. Advanced Prompting', link: '/exercises/02-advanced-prompting/README' },
-            { text: '03. Code Explanation', link: '/exercises/03-code-explanation/README' },
+            { text: '03. Prompt Refinement', link: '/exercises/03-iterative-prompt-refinement/README' },
             { text: '04. Using Extensions', link: '/exercises/04-using-extensions/README' },
-            { text: '05. Prompt Refinement', link: '/exercises/05-iterative-prompt-refinement/README' },
-            { text: '06. Authoring Extensions', link: '/exercises/06-authoring-extensions/README' },
-            { text: '07. Interactive Mastery', link: '/exercises/07-interactive-mastery/README' },
-            { text: '08. Custom Commands', link: '/exercises/08-creating-custom-commands/README' },
-            { text: '09. Context Mastery', link: '/exercises/09-context-mastery/README' }
+            { text: '05. Authoring Extensions', link: '/exercises/05-authoring-extensions/README' },
+            { text: '06. Interactive Mastery', link: '/exercises/06-interactive-mastery/README' },
+            { text: '07. Custom Commands', link: '/exercises/07-creating-custom-commands/README' },
+            { text: '08. Context Mastery', link: '/exercises/08-context-mastery/README' }
           ]
         }
       ]

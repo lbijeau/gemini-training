@@ -50,4 +50,4 @@ Common templates include `mcp-server` (for TypeScript/Node.js).
 ## Next Steps
 
 Head to the exercise to manually scaffold a simple extension structure.
-*   **[Exercise 06: Authoring Extensions](../exercises/06-authoring-extensions/README.md)**
+*   **[Exercise 05: Authoring Extensions](../exercises/05-authoring-extensions/README.md)**

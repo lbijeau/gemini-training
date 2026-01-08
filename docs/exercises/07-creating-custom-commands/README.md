@@ -1,4 +1,4 @@
-# Exercise 08: Creating a Custom Command
+# Exercise 07: Creating a Custom Command
 
 ## Objective
 

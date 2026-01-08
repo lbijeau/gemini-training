@@ -41,4 +41,4 @@ By following these best practices, you can make Gemini a valuable and productive
 ## Next Steps
 
 Now that you know the best ways to work with Gemini, try using it to explain some code!
-*   **[Exercise 03: Code Explanation](../exercises/03-code-explanation/README.md)**
+*   **[Exercise 03: Iterative Prompt Refinement](../exercises/03-iterative-prompt-refinement/README.md)**

@@ -1,4 +1,4 @@
-# Exercise 07: Interactive Mastery - Branching and Context
+# Exercise 06: Interactive Mastery - Branching and Context
 
 ## Objective
 

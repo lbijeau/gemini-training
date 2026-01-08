@@ -54,4 +54,4 @@ This is invaluable for verifying that Gemini's changes actually worked (e.g., ru
 ## Next Steps
 
 Head to the exercise to practice this "Power User" workflow.
-*   **[Exercise 07: Interactive Mastery](../exercises/07-interactive-mastery/README.md)**
+*   **[Exercise 06: Interactive Mastery](../exercises/06-interactive-mastery/README.md)**

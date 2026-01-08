@@ -52,23 +52,20 @@ This file provides a table of contents for the Gemini Training repository, makin
 *   **[Exercise 02: Advanced Prompting - Few-Shot and Role-Based Prompts](docs/exercises/02-advanced-prompting/README.md)**
     *   Hands-on practice with advanced prompting techniques for custom formatting and code review.
 
-*   **[Exercise 03: Code Explanation and Debugging](docs/exercises/03-code-explanation/README.md)**
-    *   Use Gemini to understand complex code and fix bugs in a pre-written script.
+*   **[Exercise 03: Iterative Prompt Refinement](docs/exercises/03-iterative-prompt-refinement/README.md)**
+    *   Practice refining prompts iteratively to achieve desired outcomes.
 
 *   **[Exercise 04: Using an Extension](docs/exercises/04-using-extensions/README.md)**
     *   Learn to leverage Gemini's extended capabilities by using a custom extension to generate assets.
 
-*   **[Exercise 05: Iterative Prompt Refinement - The "Review, Refine, Re-prompt" Cycle](docs/exercises/05-iterative-prompt-refinement/README.md)**
-    *   Practice refining prompts iteratively to achieve desired outcomes.
-
-*   **[Exercise 06: Authoring Your First Extension](docs/exercises/06-authoring-extensions/README.md)**
+*   **[Exercise 05: Authoring Your First Extension](docs/exercises/05-authoring-extensions/README.md)**
     *   A hands-on guide to scaffolding a Gemini Extension.
 
-*   **[Exercise 07: Interactive Mastery - Branching and Context](docs/exercises/07-interactive-mastery/README.md)**
+*   **[Exercise 06: Interactive Mastery - Branching and Context](docs/exercises/06-interactive-mastery/README.md)**
     *   Learn to time-travel in your chat sessions and inject precise context.
 
-*   **[Exercise 08: Creating a Custom Command](docs/exercises/08-creating-custom-commands/README.md)**
+*   **[Exercise 07: Creating a Custom Command](docs/exercises/07-creating-custom-commands/README.md)**
     *   Build a project-specific shortcut to automate git commit messages.
 
-*   **[Exercise 09: Context Mastery with GEMINI.md](docs/exercises/09-context-mastery/README.md)**
+*   **[Exercise 08: Context Mastery with GEMINI.md](docs/exercises/08-context-mastery/README.md)**
     *   Define project-wide coding rules and verify Gemini follows them.

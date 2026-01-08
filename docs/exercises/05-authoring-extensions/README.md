@@ -1,4 +1,4 @@
-# Exercise 06: Authoring Your First Extension
+# Exercise 05: Authoring Your First Extension
 
 ## Objective
 
