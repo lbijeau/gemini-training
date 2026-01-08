@@ -2,6 +2,38 @@
 
 This module introduces **Gemini Extensions**. Extensions are the mechanism for adding new capabilities, tools, and workflows to the Gemini CLI. They allow Gemini to interact with external systems, APIs, and your local environment in ways that the base model cannot.
 
+## Terminology: The Anatomy of a Capability
+
+It's easy to confuse these terms. Here is the hierarchy:
+
+1.  **Extension:** The installable package (the "Box").
+2.  **MCP Server:** The backend process running inside the extension (the "Engine").
+3.  **Tools:** The specific functions the AI can call (the "Features").
+
+```mermaid
+classDiagram
+    class Extension {
+        +manifest.json
+        +GEMINI.md (Context)
+    }
+    class MCPServer {
+        +Process (Node/Python)
+        +Connects to APIs
+    }
+    class Tool {
+        +name: "fetch_url"
+        +execute()
+    }
+
+    Extension *-- MCPServer : contains
+    MCPServer *-- Tool : exposes
+```
+
+### Protocol vs. Product
+*   **MCP (Model Context Protocol):** The open standard (JSON-RPC) for how the AI talks to the server.
+*   **Gemini CLI:** The client that speaks this protocol.
+
+## Why Extensions?
 ## What is an Extension?
 
 An Extension is a package that enhances Gemini with:

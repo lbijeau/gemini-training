@@ -11,6 +11,22 @@ Even with large context windows (1M+ tokens), dumping thousands of files into Ge
 
 **RAG** solves this by finding the *relevant 1%* of info and only giving that to Gemini.
 
+```mermaid
+sequenceDiagram
+    participant U as User
+    participant G as Gemini
+    participant T as RAG Tool
+    participant V as Vector DB
+
+    U->>G: "How do I use library X?"
+    G->>G: Thinks: "I need docs for X"
+    G->>T: call search_docs("library X usage")
+    T->>V: query(embedding)
+    V-->>T: return relevant_chunks
+    T-->>G: return "Here is the documentation..."
+    G->>U: "Based on the docs, here is the code..."
+```
+
 ---
 
 ## Scenario A: The Greenfield Builder (External Docs)
