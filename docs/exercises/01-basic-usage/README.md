@@ -54,8 +54,6 @@ python practice/rectangle_calculator.py
 
 After refactoring, your `practice/rectangle_calculator.py` might look something like this:
 
-![Expected Outcome for Basic Usage Exercise](../../diagrams/01-basic-usage-expected-outcome.png)
-
 ```python
 def calculate_area(length, width):
     return length * width
