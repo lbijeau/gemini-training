@@ -19,7 +19,7 @@ You need Gemini to write a Python function that calculates the nth Fibonacci num
 
 2.  **Ask Gemini to write the function with a general prompt:**
     ```bash
-    gemini "Write a Python function to calculate the nth Fibonacci number. Place it in a new file named `practice/fibonacci.py`."
+    gemini 'Write a Python function to calculate the nth Fibonacci number. Place it in a new file named `practice/fibonacci.py`.'
     ```
 
 3.  **Review the output (First Iteration):**
@@ -34,7 +34,7 @@ Let's assume Gemini's first attempt was recursive and you wanted an iterative so
 
 1.  **Modify your prompt** to add this constraint. You might also ask it to include documentation.
     ```bash
-    gemini "In the file `practice/fibonacci.py`, please replace the existing function with a new, *iterative* version that calculates the nth Fibonacci number. Also, include a docstring explaining the function, its parameters, and what it returns."
+    gemini 'In the file `practice/fibonacci.py`, please replace the existing function with a new, *iterative* version that calculates the nth Fibonacci number. Also, include a docstring explaining the function, its parameters, and what it returns.'
     ```
     *Note: By explicitly telling Gemini to modify the file, you guide it to perform an in-place edit.*
 
@@ -47,7 +47,7 @@ Let's say the iterative solution is good, but you realize it doesn't handle nega
 
 1.  **Modify your prompt further.**
     ```bash
-    gemini "Refine the existing function in `practice/fibonacci.py`. Ensure it raises a ValueError if 'n' is a negative number and add type hints for the 'n' parameter (int) and the return value (int)."
+    gemini 'Refine the existing function in `practice/fibonacci.py`. Ensure it raises a ValueError if "n" is a negative number and add type hints for the "n" parameter (int) and the return value (int).'
     ```
 
 2.  **Review the output (Final Iteration):**

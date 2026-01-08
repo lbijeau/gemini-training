@@ -14,7 +14,7 @@ You need a placeholder image for a user profile. You might expect an AI to just 
     Ask Gemini to perform an action that requires an external tool, such as generating an image or querying a live database (assuming you haven't installed specific extensions for these yet).
 
     ```bash
-    gemini "Generate a 128x128 pixel placeholder image for a user avatar. Save it to `assets/placeholder_avatar.png`."
+    gemini 'Generate a 128x128 pixel placeholder image for a user avatar. Save it to `assets/placeholder_avatar.png`.'
     ```
 
 2.  **Analyze the Response:**

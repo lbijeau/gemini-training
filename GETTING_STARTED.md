@@ -48,7 +48,7 @@ Let's start with a simple task: asking Gemini to write a "Hello, World!" functio
     ```
 2.  **Run Gemini CLI** with a prompt to generate the function.
     ```bash
-    gemini "Write a Python function named `hello_world` that prints 'Hello, Gemini!'. Create it in a new file at `practice/hello_world_gemini.py`."
+    gemini 'Write a Python function named `hello_world` that prints "Hello, Gemini!". Create it in a new file at `practice/hello_world_gemini.py`.'
     ```
 
 3.  **Inspect the generated code:**

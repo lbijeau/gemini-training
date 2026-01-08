@@ -38,7 +38,7 @@ You've encountered a piece of Python code that uses a regular expression to vali
 
     **Example Prompt Idea:**
     ```bash
-    gemini "In the file `practice/validator.py`, please explain the regular expression pattern used in the `is_valid_email` function. Break down each part of the regex and explain what it matches. Respond in the console."
+    gemini 'In the file `practice/validator.py`, please explain the regular expression pattern used in the `is_valid_email` function. Break down each part of the regex and explain what it matches. Respond in the console.'
     ```
 
 3.  **Review the explanation:**
