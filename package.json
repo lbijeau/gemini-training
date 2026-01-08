@@ -1,6 +1,7 @@
 {
   "name": "gemini-training",
   "version": "1.0.0",
+  "type": "module",
   "description": "![Gemini Training Logo](assets/logo.png)",
   "main": "index.js",
   "directories": {
