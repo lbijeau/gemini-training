@@ -26,7 +26,14 @@ This shift means that **Prompt Engineering**—the art of crafting clear, specif
 
 Interacting with Gemini typically involves the following steps, which can be visualized as a cycle:
 
-![Gemini Interaction Flow](../diagrams/gemini-interaction-flow.png)
+```mermaid
+graph TD
+    A[Define Goal] -->|Specific & Clear| B[Provide Context]
+    B -->|Files & Code| C[Execute Command]
+    C -->|Conversational Prompt| D[Review & Refine]
+    D -->|Iterate| A
+    D -->|Success| E[Done]
+```
 
 1.  **Define Your Goal:** Clearly articulate what you want Gemini to do. The more specific your prompt, the better the result.
 2.  **Provide Context:** If Gemini needs to operate on existing code, make sure to provide the relevant files or code snippets.
