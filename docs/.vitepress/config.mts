@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   base: '/gemini-training/',
-  title: "Gemini Training",
+  title: "Gemini Training [Alpha]",
   description: "Master the Gemini CLI for Software Engineering",
   ignoreDeadLinks: true,
   srcDir: '.',
@@ -52,7 +52,7 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/lbijeau/gemini-training' }
     ],
     footer: {
-      message: 'This is an independent community project. Not affiliated with or endorsed by Google.',
+      message: 'This is an independent community project in Alpha. Not affiliated with or endorsed by Google.',
       copyright: 'Copyright © 2026-present Luc Bijeau. Gemini is a trademark of Google LLC.'
     }
   }

@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: "Gemini Training"
+  name: "Gemini Training (Alpha)"
   text: "Master the Gemini CLI"
   tagline: "Practical guidance for AI-powered software engineering"
   image:
