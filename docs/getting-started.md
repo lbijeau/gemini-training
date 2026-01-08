@@ -8,7 +8,7 @@ The Gemini CLI is a powerful command-line interface that allows you to interact 
 
 ## 2. Installation and Setup
 
-If you're new to command-line tools or need a refresher on basic terminal commands used in these exercises, please refer to our **[Prerequisites for Gemini Training](docs/support/prerequisites.md)** document.
+If you're new to command-line tools or need a refresher on basic terminal commands used in these exercises, please refer to our **[Prerequisites for Gemini Training](./support/prerequisites.md)** document.
 
 ### Prerequisites
 
