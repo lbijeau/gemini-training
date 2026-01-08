@@ -1,7 +1,9 @@
 import { defineConfig } from 'vitepress'
 
+const isProd = process.env.NODE_ENV === 'production'
+
 export default defineConfig({
-  base: '/gemini-training/',
+  base: isProd ? '/gemini-training/' : '/',
   title: "Gemini Training [Alpha]",
   description: "Master the Gemini CLI for Software Engineering",
   ignoreDeadLinks: true,
