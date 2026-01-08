@@ -11,6 +11,7 @@ Unlike the [Modules](../modules/01-introduction.md), which teach you *concepts*,
 *   **[Documentation](./documentation.md)**: Automating docstrings, READMEs, and technical explanations.
 *   **[Debugging](./debugging.md)**: Techniques for finding root causes and fixing bugs.
 *   **[Workflow Integrations](./integrations.md)**: Using Gemini with GitHub (`gh`), Jira, and Confluence.
+*   **[RAG & Infinite Context](./rag.md)**: Strategies for working with massive codebases and external documentation.
 
 ## How to Use These Recipes
 

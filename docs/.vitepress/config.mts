@@ -51,12 +51,12 @@ export default defineConfig({
         items: [
           { text: 'Unit Testing', link: '/recipes/unit-testing' },
           { text: 'Refactoring', link: '/recipes/refactoring' },
-          { text: 'Documentation', link: '/recipes/documentation' },
-          { text: 'Debugging', link: '/recipes/debugging' },
-          { text: 'Integrations', link: '/recipes/integrations' }
-        ]
-      },
-      {
+                      { text: 'Documentation', link: '/recipes/documentation' },
+                      { text: 'Debugging', link: '/recipes/debugging' },
+                      { text: 'Integrations', link: '/recipes/integrations' },
+                      { text: 'RAG & Infinite Context', link: '/recipes/rag' }
+                    ]
+                  },      {
         text: 'Reference',
         collapsed: true,
         items: [
