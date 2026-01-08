@@ -38,6 +38,20 @@ Before installing Gemini CLI, ensure you have the following installed:
     gemini --help
     ```
 
+### Streamlining Your Workflow (Recommended)
+
+By default, Gemini requires approval for file modifications and only trusts the directory where it was started. For this training course, we recommend creating a `gstudent` alias. This will:
+1.  **Auto-approve** file edits (saving you from hitting "Yes" constantly).
+2.  **Trust your current folder** (preventing "path not allowed" errors).
+
+**Run this command to create the alias:**
+```bash
+echo "alias gstudent='gemini --approval-mode auto_edit --include-directories .'" >> ~/.zshrc && source ~/.zshrc
+# Note: If you use bash, replace .zshrc with .bashrc
+```
+
+**⚠️ Caution:** This alias allows Gemini to edit and create files in your current directory without asking first. Only use `gstudent` in folders where you are comfortable with AI making changes (like this training repository).
+
 ## 3. First Interaction: "Hello, World!" Function
 
 Let's start with a simple task: asking Gemini to write a "Hello, World!" function in Python.
@@ -46,10 +60,11 @@ Let's start with a simple task: asking Gemini to write a "Hello, World!" functio
     ```bash
     touch practice/hello_world_gemini.py
     ```
-2.  **Run Gemini CLI** with a prompt to generate the function.
+2.  **Run Gemini CLI** using your new alias:
     ```bash
-    gemini 'Write a Python function named `hello_world` that prints "Hello, Gemini!". Create it in a new file at `practice/hello_world_gemini.py`.'
+    gstudent 'Write a Python function named `hello_world` that prints "Hello, Gemini!". Create it in a new file at `practice/hello_world_gemini.py`.'
     ```
+    *(If you didn't create the alias, replace `gstudent` with `gemini` and be prepared to approve the action).*
 
 3.  **Inspect the generated code:**
     Open `practice/hello_world_gemini.py` to see the function Gemini generated.
