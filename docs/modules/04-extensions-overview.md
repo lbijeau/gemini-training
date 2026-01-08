@@ -75,6 +75,27 @@ Depending on your use case, you might choose to run an MCP server locally or con
 | **Access** | Can access your local file system | Restricted to provided API |
 | **Reliability** | Works offline | Requires internet connection |
 
+## Common Use Cases
+
+Extensions transform Gemini from a chatbot into a specialized workstation:
+
+*   **Data Retrieval:** Fetching live data from GitHub, Jira, or internal databases.
+*   **Asset Generation:** Creating images, diagrams, or PDFs directly from prompts.
+*   **System Automation:** Running shell commands, managing files, or triggering CI/CD pipelines.
+*   **Browser Interaction:** Navigating websites, taking screenshots, and extracting data from web apps.
+
+## Pros and Cons of Extensions
+
+### Pros
+*   **Endless Capability:** Gemini can do anything a program can do.
+*   **Reduced Hallucination:** By providing real data (e.g., from an API), Gemini doesn't have to guess facts.
+*   **Standardized Integration:** MCP makes it easy to swap tools between different AI clients.
+
+### Cons
+*   **Complexity:** Setting up MCP servers requires technical knowledge (Node/Python).
+*   **Security Risk:** A malicious extension could read your files or execute harmful commands if not vetted.
+*   **Latency:** Every tool call adds a small delay to the response time.
+
 ## Example: The Asset Generator
 
 We've used an extension already! When we generated the logo for this repository, we were using an extension that provided an `asset-generator` tool.

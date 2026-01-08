@@ -57,6 +57,16 @@ sequenceDiagram
 3.  **Retrieve:** Your tool finds `LegacyAuth.java`, `SecurityUtils.cpp`, and `LoginController.py` based on semantic meaning, not just the word "password".
 4.  **Refactor:** Gemini loads only those 3 files into context and refactors them safely.
 
+## Greenfield vs. Legacy RAG Comparison
+
+| Feature | Greenfield (Docs/Specs) | Legacy (Codebase Indexing) |
+| :--- | :--- | :--- |
+| **Primary Goal** | Learning new syntax/APIs | Understanding existing architecture |
+| **Data Source** | External Documentation (PDF/Web) | Internal Source Code (Git Repo) |
+| **Token Savings** | High (Avoids pasting entire manuals) | Extreme (Avoids loading 100k+ lines) |
+| **Session Memory** | Short-term (Project bootstrap) | Long-term (Persistent codebase map) |
+| **Key Advantage** | No more "hallucinated" APIs | Find logic hidden in massive files |
+
 ---
 
 ## 🛠️ Implementation: Building a "Doc Search" Extension
