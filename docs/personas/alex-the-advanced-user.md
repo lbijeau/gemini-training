@@ -29,7 +29,7 @@ Alex will quickly skim the basics and jump straight to the advanced content. He 
 
 *   **Advanced Modules (02):** The "Advanced Prompting Techniques" module is exactly what he is looking for. He would be eager for future modules on topics like "Creating Custom Tools" or "Workflow Automation".
 *   **Complex Exercises (02):** The exercises on few-shot and role-based prompting provide the hands-on practice he needs to validate his understanding.
-*   **`CONTRIBUTING.md`:** As an expert, Alex is a prime candidate for becoming a contributor to the repository, adding his own insights and examples.
+*   **Contribution Guidelines:** As an expert, Alex is a prime candidate for becoming a contributor to the repository, adding his own insights and examples.
 *   **Under-the-Hood Content:** He would appreciate any content that explains the "why" behind Gemini's behavior, not just the "how".
 *   **Examples of `custom extensions`:** The concept of building custom extensions to automate his specific workflows would be highly appealing to him.
 

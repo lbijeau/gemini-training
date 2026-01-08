@@ -40,6 +40,6 @@ Ravi is the guardian of quality for this repository. His role is to review all c
 *   **Overall:**
     *   He will be the one to suggest new modules, exercises, or diagrams to fill gaps in the curriculum.
     *   He will enforce consistency in tone, style, and formatting across the entire repository.
-    *   He is the ideal person to write or review the `CONTRIBUTING.md` to ensure a high standard for community contributions.
+    *   He is the ideal person to write or review the **Contribution Guidelines** to ensure a high standard for community contributions.
 
 Ravi's perspective is crucial for maintaining the quality and effectiveness of the training materials. When creating or updating content, we should always ask: "What would Ravi think?"
