@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  base: '/gemini-training/',
   title: "Gemini Training",
   description: "Master the Gemini CLI for Software Engineering",
   themeConfig: {
