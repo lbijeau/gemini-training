@@ -1,8 +1,9 @@
 import { defineConfig } from 'vitepress'
+import { withMermaid } from 'vitepress-plugin-mermaid'
 
 const isProd = process.env.NODE_ENV === 'production'
 
-export default defineConfig({
+export default withMermaid(defineConfig({
   base: isProd ? '/gemini-training/' : '/',
   title: "Gemini Training [Alpha]",
   description: "Master the Gemini CLI for Software Engineering",
@@ -72,4 +73,4 @@ export default defineConfig({
       copyright: 'Copyright © 2026-present Luc Bijeau. Gemini is a trademark of Google LLC.'
     }
   }
-})
+}))
