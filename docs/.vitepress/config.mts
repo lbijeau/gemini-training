@@ -57,4 +57,4 @@ export default withMermaid(defineConfig({
       copyright: 'Copyright © 2026-present Luc Bijeau. Gemini is a trademark of Google LLC.'
     }
   }
-})
+}))
