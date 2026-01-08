@@ -1,7 +1,6 @@
 import { defineConfig } from 'vitepress'
-import { withMermaid } from 'vitepress-plugin-mermaid'
 
-export default withMermaid(defineConfig({
+export default defineConfig({
   base: '/gemini-training/',
   title: "Gemini Training [Alpha]",
   description: "Master the Gemini CLI for Software Engineering",
@@ -62,4 +61,4 @@ export default withMermaid(defineConfig({
       copyright: 'Copyright © 2026-present Luc Bijeau. Gemini is a trademark of Google LLC.'
     }
   }
-}))
+})
