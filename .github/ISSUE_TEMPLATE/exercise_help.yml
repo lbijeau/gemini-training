@@ -1,0 +1,44 @@
+name: 🆘 Exercise Help
+description: Stuck on a specific exercise? Ask for help here.
+title: "[Help]: <Exercise Name>"
+labels: ["help wanted", "exercise"]
+body:
+  - type: dropdown
+    id: module
+    attributes:
+      label: Which Module?
+      description: Select the module you are working on.
+      options:
+        - 01 - Basic Usage
+        - 02 - Advanced Prompts
+        - 03 - Code Explanation
+        - 04 - Using Extensions
+        - 05 - Prompt Refinement
+        - 06 - Authoring Extensions
+        - 07 - Interactive Mastery
+        - 08 - Creating Custom Commands
+        - 09 - Context Mastery
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe what you were trying to do and what went wrong.
+      placeholder: I tried to run the command but got this error...
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Your Prompt
+      description: Paste the exact prompt you sent to Gemini.
+      render: markdown
+    validations:
+      required: false
+  - type: textarea
+    id: output
+    attributes:
+      label: Gemini's Output
+      description: Paste the relevant part of Gemini's response or error message.
+      render: markdown
