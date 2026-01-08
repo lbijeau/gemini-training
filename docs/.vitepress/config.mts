@@ -7,7 +7,6 @@ export default defineConfig({
   title: "Gemini Training [Alpha]",
   description: "Master the Gemini CLI for Software Engineering",
   ignoreDeadLinks: true,
-  srcDir: 'docs',
   outDir: '.vitepress/dist',
   themeConfig: {
     logo: '/assets/logo.png',
