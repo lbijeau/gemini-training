@@ -14,7 +14,7 @@ hero:
       link: /getting-started
     - theme: alt
       text: View Modules
-      link: /docs/modules/01-introduction
+      link: /modules/01-introduction
     - theme: alt
       text: Get Help
       link: https://github.com/lbijeau/gemini-training/issues/new/choose
@@ -27,3 +27,8 @@ features:
   - title: Interactive Power User
     details: Master the terminal shortcuts and iterative refinement patterns.
 ---
+
+<div style="text-align: center; margin-top: 2rem; opacity: 0.6; font-size: 0.9rem;">
+  <p>This is an independent community project. Not affiliated with or endorsed by Google.</p>
+  <p>Gemini is a trademark of Google LLC.</p>
+</div>
