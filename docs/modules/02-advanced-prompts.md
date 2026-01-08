@@ -61,4 +61,4 @@ By combining these techniques, you can guide Gemini to produce highly specific a
 
 ## Next Steps
 
-Head over to `docs/exercises/02-advanced-prompting/` to practice these advanced techniques.
+Head over to **[Exercise 02: Advanced Prompting](../exercises/02-advanced-prompting/README.md)** to practice these advanced techniques.

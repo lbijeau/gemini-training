@@ -48,4 +48,4 @@ You can manage extensions using the `gemini extensions` command group.
 ## Next Steps
 
 In the next exercise, you will use an installed extension to perform a task. Later, in Module 05, you will learn how to build your own!
-*   [Exercise 04: Using an Extension](../exercises/04-using-extensions/README.md)
+*   **[Exercise 04: Using an Extension](../exercises/04-using-extensions/README.md)**

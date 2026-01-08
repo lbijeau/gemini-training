@@ -55,4 +55,4 @@ The quality of Gemini's output heavily depends on the quality of your input. Her
 ## Next Steps
 
 Head over to the exercises to put these concepts into practice!
-*   `docs/exercises/01-basic-usage/`
+*   **[Exercise 01: Basic Usage](../exercises/01-basic-usage/README.md)**

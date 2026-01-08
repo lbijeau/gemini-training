@@ -37,3 +37,8 @@ This iterative loop is the key to successful collaboration with any AI code assi
 *   **Combine with Your Own Expertise:** Gemini is a powerful tool, but it's a supplement to, not a replacement for, your own skills and judgment. Use it to automate tedious tasks, brainstorm ideas, and learn new patterns, but always apply your own expertise to the final product.
 
 By following these best practices, you can make Gemini a valuable and productive member of your development team.
+
+## Next Steps
+
+Now that you know the best ways to work with Gemini, try using it to explain some code!
+*   **[Exercise 03: Code Explanation](../exercises/03-code-explanation/README.md)**
