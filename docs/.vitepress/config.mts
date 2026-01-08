@@ -49,11 +49,11 @@ export default defineConfig({
         {
           text: 'Cookbook',
           items: [
-            { text: 'Unit Testing', link: '/docs/recipes/unit-testing' },
-            { text: 'Refactoring', link: '/docs/recipes/refactoring' },
-            { text: 'Documentation', link: '/docs/recipes/documentation' },
-            { text: 'Debugging', link: '/docs/recipes/debugging' },
-            { text: 'Integrations', link: '/docs/recipes/integrations' }
+            { text: 'Unit Testing', link: '/recipes/unit-testing' },
+            { text: 'Refactoring', link: '/recipes/refactoring' },
+            { text: 'Documentation', link: '/recipes/documentation' },
+            { text: 'Debugging', link: '/recipes/debugging' },
+            { text: 'Integrations', link: '/recipes/integrations' }
           ]
         },
         {
