@@ -29,6 +29,15 @@ features:
   - title: Interactive Power User
     details: Master the terminal shortcuts and iterative refinement patterns.
     link: /modules/06-interactive-power-user
+  - title: Automated Testing
+    details: Use Gemini to generate comprehensive test suites and edge-case coverage.
+    link: /recipes/unit-testing
+  - title: Workflow Integration
+    details: Connect your terminal to GitHub, Jira, and Confluence for seamless automation.
+    link: /recipes/integrations
+  - title: Infinite Context (RAG)
+    details: Overcome context limits by connecting Gemini to your proprietary knowledge base.
+    link: /recipes/rag
 ---
 
 <div style="text-align: center; margin-top: 2rem; opacity: 0.6; font-size: 0.9rem;">
