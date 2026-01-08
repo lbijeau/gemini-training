@@ -10,9 +10,9 @@ This repository provides detailed information and practical guidance on effectiv
 
 ## Repository Structure
 
-*   **[docs/](docs/)**: Contains all documentation, including conceptual modules and hands-on exercises.
-*   **[examples/](examples/)**: A collection of standalone code examples demonstrating specific Gemini CLI functionalities.
-*   **[practice/](practice/)**: Your personal workspace for experimenting with Gemini.
+*   **[docs/](./)**: Contains all documentation, including conceptual modules and hands-on exercises.
+*   **[examples/](../examples/)**: A collection of standalone code examples demonstrating specific Gemini CLI functionalities.
+*   **[practice/](../practice/)**: Your personal workspace for experimenting with Gemini.
 
 ## Contributing
 
