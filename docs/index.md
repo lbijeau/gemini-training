@@ -15,6 +15,9 @@ hero:
     - theme: alt
       text: View Modules
       link: /docs/modules/01-introduction
+    - theme: alt
+      text: Get Help
+      link: https://github.com/lbijeau/gemini-training/issues/new/choose
 
 features:
   - title: Context Mastery
