@@ -7,7 +7,7 @@ export default withMermaid(defineConfig({
   description: "Master the Gemini CLI for Software Engineering",
   ignoreDeadLinks: true,
   srcDir: 'docs',
-  outDir: 'docs/.vitepress/dist',
+  outDir: '.vitepress/dist',
   themeConfig: {
     logo: '/assets/logo.png',
     nav: [
