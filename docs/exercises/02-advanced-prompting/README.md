@@ -35,19 +35,21 @@ You have a Python script with functions that return simple strings. You want to 
     Craft a prompt that first shows Gemini an example of how you would refactor a similar function, and then asks it to refactor `get_product` in the same style.
 
     **Example Prompt Idea:**
-    ```bash
-    gemini "$(cat << 'EOF'
+
+```bash
+gstudent "$(cat << 'EOF'
 I need to refactor a function in the file `practice/user_service.py`.
+My goal is to make my Python functions return a consistent JSON response. 
 
-My goal is to make my Python functions return a consistent JSON response. Here is an example of the pattern I want to follow:
+Here is an example of the pattern I want to follow:
 
-# --- PATTERN EXAMPLE: BEFORE ---
+[PATTERN EXAMPLE: BEFORE]
 def get_user(user_id):
     if user_id == 1:
         return "Alice"
     return "User not found"
 
-# --- PATTERN EXAMPLE: AFTER ---
+[PATTERN EXAMPLE: AFTER]
 import json
 
 def get_user(user_id):
@@ -56,11 +58,10 @@ def get_user(user_id):
     return json.dumps({"status": "error", "message": "User not found"})
 
 ---
-
 Now, using this exact pattern, please refactor the `get_product` function in `practice/user_service.py`.
 EOF
 )"
-    ```
+```
 
 3.  **Review and verify** the output in `practice/user_service.py`. It should have correctly refactored `get_product`.
 
