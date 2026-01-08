@@ -6,7 +6,7 @@ In this exercise, you will manually create the directory structure and manifest 
 
 ## Scenario
 
-You want to create an extension named `my-toolbox` that will eventually host some python scripts. For now, we will set up the skeleton.
+In Exercise 04, you tried to generate an image and failed because the "limbs" (Tools) were missing. Now, you will build the skeleton for that missing limb: an extension named `placeholder-gen`.
 
 ## Instructions
 
@@ -15,7 +15,7 @@ You want to create an extension named `my-toolbox` that will eventually host som
 Extensions can live anywhere, but let's put it in `practice/extensions`.
 
 ```bash
-mkdir -p practice/extensions/my-toolbox
+mkdir -p practice/extensions/placeholder-gen
 ```
 
 ### Step 2: Create the Manifest
@@ -23,16 +23,16 @@ mkdir -p practice/extensions/my-toolbox
 Create the `gemini-extension.json` file. This is what makes it an extension.
 
 ```bash
-touch practice/extensions/my-toolbox/gemini-extension.json
+touch practice/extensions/placeholder-gen/gemini-extension.json
 ```
 
 Add the following content:
 
 ```json
 {
-  "name": "my-toolbox",
+  "name": "placeholder-gen",
   "version": "0.0.1",
-  "description": "My personal collection of tools",
+  "description": "A tool for generating placeholder assets",
   "contextFileName": "GEMINI.md"
 }
 ```
@@ -42,15 +42,16 @@ Add the following content:
 Create a `GEMINI.md` file in that directory.
 
 ```bash
-touch practice/extensions/my-toolbox/GEMINI.md
+touch practice/extensions/placeholder-gen/GEMINI.md
 ```
 
 Add content:
 ```markdown
-# My Toolbox Context
+# Asset Generator Context
 
-You are equipped with the 'My Toolbox' extension.
-Always prefer efficient solutions.
+You are equipped with the 'Placeholder Generator' extension.
+When the user asks for a placeholder, you now have the conceptual ability to handle it.
+Always specify the dimensions and format when confirming.
 ```
 
 ### Step 4: Link the Extension (Hypothetical)
@@ -58,15 +59,32 @@ Always prefer efficient solutions.
 To install this extension in your real Gemini CLI, you would run:
 
 ```bash
-gemini extensions link ./practice/extensions/my-toolbox
+gemini extensions link ./practice/extensions/placeholder-gen
 ```
 
 Once linked, Gemini would load your `GEMINI.md` context automatically.
+
+### Step 5: Adding the "Limbs" (MCP)
+
+To make this extension actually *do* something (like create a real file), you would add an `mcpServers` section to the JSON:
+
+```json
+{
+  "mcpServers": {
+    "image-gen": {
+      "command": "python3",
+      "args": ["image_tool.py"]
+    }
+  }
+}
+```
+
+Then, you would write `image_tool.py` to handle the logic of creating pixels.
 
 ## Review
 
 You have created the valid skeleton of an extension!
 1.  **Manifest**: Defines identity.
-2.  **Context**: Defines instructions.
+2.  **Context**: Defines instructions and personality.
 
-To add actual *tools* (like API calls), you would add an `mcpServers` section to the JSON and write a script to handle the requests, but that's an advanced topic for another day!
+By linking this, you've gone from "I can't do that" to "I am an Asset Generator". You've given Gemini the **instructions** it needs to understand its new role.
