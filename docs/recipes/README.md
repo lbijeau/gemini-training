@@ -10,6 +10,7 @@ Unlike the [Modules](../modules/01-introduction.md), which teach you *concepts*,
 *   **[Refactoring](./refactoring.md)**: Patterns for cleaning up and modernizing legacy code.
 *   **[Documentation](./documentation.md)**: Automating docstrings, READMEs, and technical explanations.
 *   **[Debugging](./debugging.md)**: Techniques for finding root causes and fixing bugs.
+*   **[Workflow Integrations](./integrations.md)**: Using Gemini with GitHub (`gh`), Jira, and Confluence.
 
 ## How to Use These Recipes
 

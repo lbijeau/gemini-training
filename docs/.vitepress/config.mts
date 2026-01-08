@@ -52,7 +52,8 @@ export default defineConfig({
             { text: 'Unit Testing', link: '/docs/recipes/unit-testing' },
             { text: 'Refactoring', link: '/docs/recipes/refactoring' },
             { text: 'Documentation', link: '/docs/recipes/documentation' },
-            { text: 'Debugging', link: '/docs/recipes/debugging' }
+            { text: 'Debugging', link: '/docs/recipes/debugging' },
+            { text: 'Integrations', link: '/docs/recipes/integrations' }
           ]
         },
         {
