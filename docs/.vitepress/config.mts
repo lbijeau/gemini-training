@@ -13,7 +13,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Getting Started', link: '/getting-started' },
       { text: 'Modules', link: '/modules/01-introduction' },
-      { text: 'Exercises', link: '/exercises/01-basic-usage/' }
+      { text: 'Exercises', link: '/exercises/01-basic-usage/README' }
     ],
     sidebar: {
       '/modules/': [
@@ -35,15 +35,15 @@ export default defineConfig({
         {
           text: 'Hands-on Labs',
           items: [
-            { text: '01. Basic Usage', link: '/exercises/01-basic-usage/' },
-            { text: '02. Advanced Prompting', link: '/exercises/02-advanced-prompting/' },
-            { text: '03. Code Explanation', link: '/exercises/03-code-explanation/' },
-            { text: '04. Using Extensions', link: '/exercises/04-using-extensions/' },
-            { text: '05. Prompt Refinement', link: '/exercises/05-iterative-prompt-refinement/' },
-            { text: '06. Authoring Extensions', link: '/exercises/06-authoring-extensions/' },
-            { text: '07. Interactive Mastery', link: '/exercises/07-interactive-mastery/' },
-            { text: '08. Custom Commands', link: '/exercises/08-creating-custom-commands/' },
-            { text: '09. Context Mastery', link: '/exercises/09-context-mastery/' }
+            { text: '01. Basic Usage', link: '/exercises/01-basic-usage/README' },
+            { text: '02. Advanced Prompting', link: '/exercises/02-advanced-prompting/README' },
+            { text: '03. Code Explanation', link: '/exercises/03-code-explanation/README' },
+            { text: '04. Using Extensions', link: '/exercises/04-using-extensions/README' },
+            { text: '05. Prompt Refinement', link: '/exercises/05-iterative-prompt-refinement/README' },
+            { text: '06. Authoring Extensions', link: '/exercises/06-authoring-extensions/README' },
+            { text: '07. Interactive Mastery', link: '/exercises/07-interactive-mastery/README' },
+            { text: '08. Custom Commands', link: '/exercises/08-creating-custom-commands/README' },
+            { text: '09. Context Mastery', link: '/exercises/09-context-mastery/README' }
           ]
         }
       ]
