@@ -1,4 +1,4 @@
-![Gemini Training Logo](assets/logo.png)
+![Gemini Training Logo](/assets/logo.png)
 
 # Gemini Training
 
