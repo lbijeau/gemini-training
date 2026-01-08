@@ -1,6 +1,6 @@
-# 04 - Extensions: Expanding Gemini's Capabilities
+# 04 - Extensions Overview: Expanding Gemini's Capabilities
 
-This module introduces **Gemini Extensions**. Extensions are the mechanism for adding new capabilities, tools, and workflows to the Gemini CLI. You might hear the community refer to these as "Superpowers," but "Extensions" is the official term.
+This module introduces **Gemini Extensions**. Extensions are the mechanism for adding new capabilities, tools, and workflows to the Gemini CLI. They allow Gemini to interact with external systems, APIs, and your local environment in ways that the base model cannot.
 
 ## What is an Extension?
 
@@ -27,7 +27,7 @@ For the technically curious, Gemini uses the **Model Context Protocol (MCP)** to
 2.  **Context Injection:** A condensed list of these tools (names and descriptions) is invisibly injected into the system prompt. This tells the LLM, "You have these tools available."
 3.  **The Handshake:** When you ask for an image, the LLM outputs a structured "Tool Call" request instead of plain text.
 4.  **The Bridge:** The Gemini CLI intercepts this request, runs the corresponding code in the Extension (which runs as a separate process), and feeds the result back to the LLM.
-5.  **Security:** Extensions run locally on your machine. You explicitly install them, giving you control over what "superpowers" your AI has access to.
+5.  **Security:** Extensions run locally on your machine. You explicitly install them, giving you control over what capabilities your AI has access to.
 
 ## Example: The Asset Generator
 

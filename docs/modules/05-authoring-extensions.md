@@ -32,12 +32,13 @@ An extension is a directory containing a `gemini-extension.json` manifest file. 
 *   **`mcpServers`**: Defines tools. Gemini starts these servers and communicates with them to execute actions.
 *   **`${extensionPath}`**: A variable that resolves to the extension's installation directory.
 
-## Tools vs. Skills vs. Superpowers
+## Tools vs. Extensions
 
-You might hear these terms used interchangeably. In the official Gemini CLI:
-*   **Tools** are the atomic functions defined in MCP servers.
-*   **Extensions** are the packages that contain Tools.
-*   "Superpowers" is a community term often used to describe this extensibility.
+To clarify the terminology:
+*   **Tools** are the atomic functions defined in MCP servers (e.g., `generate_image`, `read_file`).
+*   **Extensions** are the packages that contain and distribute these Tools.
+
+Think of an **Extension** as the toolbox, and **Tools** as the hammer and wrench inside it.
 
 ## Developing an Extension
 

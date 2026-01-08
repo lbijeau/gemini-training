@@ -12,7 +12,7 @@
 *   **Primary Goal:** To master Gemini's advanced capabilities to automate complex workflows and use it as a force multiplier for their team.
 *   **Motivations:**
     *   Wants to move beyond simple code completion and use Gemini for complex tasks like multi-file refactoring, generating detailed architecture proposals, and automating documentation.
-    *   Is interested in customizing Gemini's behavior, possibly by creating custom tools or "superpowers".
+    *   Is interested in customizing Gemini's behavior, possibly by creating custom tools or extensions.
     *   Wants to establish best practices and guidelines for their team on how to use AI tools effectively and safely.
     *   Looks for ways to speed up the entire development lifecycle, from design to deployment.
 
@@ -31,6 +31,6 @@ Alex will quickly skim the basics and jump straight to the advanced content. He 
 *   **Complex Exercises (02):** The exercises on few-shot and role-based prompting provide the hands-on practice he needs to validate his understanding.
 *   **`CONTRIBUTING.md`:** As an expert, Alex is a prime candidate for becoming a contributor to the repository, adding his own insights and examples.
 *   **Under-the-Hood Content:** He would appreciate any content that explains the "why" behind Gemini's behavior, not just the "how".
-*   **Examples of `superpowers`:** The concept of "superpowers" in the broader codex ecosystem would be highly appealing to him.
+*   **Examples of `custom extensions`:** The concept of building custom extensions to automate his specific workflows would be highly appealing to him.
 
 For Alex, the key is providing deep, technical content that respects his existing knowledge and gives him the tools to push the boundaries of what's possible with Gemini.
