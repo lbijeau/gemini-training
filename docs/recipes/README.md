@@ -2,7 +2,7 @@
 
 Welcome to the **Cookbook**! This section contains a collection of "Recipes"—practical, copy-pasteable prompt patterns for common software engineering tasks.
 
-Unlike the [Modules](../modules/01-introduction.md), which teach you *concepts*, these recipes are designed to help you get work done *now*.
+Unlike the [Modules](../modules/01-introduction), which teach you *concepts*, these recipes are designed to help you get work done *now*.
 
 ## Available Recipes
 

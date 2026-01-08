@@ -32,6 +32,5 @@ This repository is Nina's ideal starting point. She will gravitate towards:
 *   **Modules 01 and 03:** The "Introduction" and "Best Practices" modules will give her the foundational knowledge and confidence she needs.
 *   **Simple Exercises (01):** The initial refactoring exercise is a perfect, low-stakes way for her to have a first "win" with Gemini.
 *   **Clear Explanations:** She appreciates the clear, step-by-step instructions and explanations that assume no prior AI knowledge.
-*   **`SUMMARY.md`:** The summary file helps her see the learning path and navigate the repository easily.
 
 For Nina, the key is a structured, guided learning path that builds her confidence and provides practical, real-world examples.

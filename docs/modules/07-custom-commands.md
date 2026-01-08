@@ -46,7 +46,7 @@ You can also inject file contents automatically.
 ```toml
 prompt = """
 Review the code in {{args}} against our style guide:
-@{docs/style-guide.md}
+@{style-guide.txt}
 """
 ```
 
