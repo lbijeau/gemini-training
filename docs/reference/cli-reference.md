@@ -40,8 +40,15 @@ These flags modify the CLI's behavior.
 *   `-y, --yolo`: **(Use with caution)** Automatically accepts all actions without prompting for confirmation.
 *   `--approval-mode <mode>`: Sets the approval behavior.
     *   `default`: Prompt for approval on actions.
-    *   `auto_edit`: Automatically approve tools that only edit files.
+    *   `auto_edit`: Automatically approve tools that only edit files. (Recommended for "Human in the Loop" workflows).
     *   `yolo`: Automatically approve all tools.
+*   `--include-directories <path>`: Explicitly add directories to the agent's allowed workspace. Useful when working across multiple folders or outside the current root.
+    *   Example: `gemini --include-directories ./src ../libs "Refactor the library..."`
+
+### Debugging & Troubleshooting
+
+*   `-d, --debug`: Run in debug mode. Prints verbose logs about tool execution, context window usage, and internal errors.
+*   `--verbose`: Show more detailed output during execution.
 
 ### Session Management
 
