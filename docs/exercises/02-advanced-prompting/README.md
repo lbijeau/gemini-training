@@ -14,20 +14,21 @@ You have a Python script with functions that return simple strings. You want to 
 
 1.  **Create the initial script:**
     Create a file `practice/user_service.py` with the following content:
-    ```python
-    # practice/user_service.py
 
-    def get_user(user_id):
-        # In a real app, this would fetch from a database
-        if user_id == 1:
-            return "Alice"
-        return "User not found"
+```python
+# practice/user_service.py
 
-    def get_product(product_id):
-        if product_id == 100:
-            return "Laptop"
-        return "Product not found"
-    ```
+def get_user(user_id):
+    # In a real app, this would fetch from a database
+    if user_id == 1:
+        return "Alice"
+    return "User not found"
+
+def get_product(product_id):
+    if product_id == 100:
+        return "Laptop"
+    return "Product not found"
+```
 
 2.  **Use Few-Shot Prompting to refactor `get_product`:**
     Your goal is to make the functions return a JSON object like `{"status": "success", "data": "..."}` or `{"status": "error", "message": "..."}`.
@@ -75,22 +76,24 @@ You have a Python function that might be inefficient. You want to get an expert 
 
 1.  **Add a function to your script:**
     Add the following function to `practice/user_service.py`:
-    ```python
-    def find_common_elements(list1, list2):
-        common = []
-        for item1 in list1:
-            for item2 in list2:
-                if item1 == item2:
-                    common.append(item1)
-        return common
-    ```
+
+```python
+def find_common_elements(list1, list2):
+    common = []
+    for item1 in list1:
+        for item2 in list2:
+            if item1 == item2:
+                common.append(item1)
+    return common
+```
 
 2.  **Use Role-Based Prompting to get a review:**
     Craft a prompt where you assign Gemini the role of an expert Python developer and ask it to review and improve the `find_common_elements` function.
 
     **Example Prompt Idea:**
-    ```bash
-    gemini "$(cat << 'EOF'
+
+```bash
+gstudent "$(cat << 'EOF'
 You are an expert Python developer specializing in code optimization.
 Please review the function `find_common_elements` in the file `practice/user_service.py`.
 
@@ -100,7 +103,7 @@ Your task:
 3.  Replace the existing function in `practice/user_service.py` with your improved version, including the explanation as comments within the file.
 EOF
 )"
-    ```
+```
 
 3.  **Review the result.** Gemini should have replaced the nested loop with a more efficient solution (e.g., using sets) and possibly added comments explaining the change, based on your prompt.
 

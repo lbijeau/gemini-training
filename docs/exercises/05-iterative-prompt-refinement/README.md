@@ -13,14 +13,16 @@ You need Gemini to write a Python function that calculates the nth Fibonacci num
 ### Step 1: Initial (General) Prompt
 
 1.  **Create an empty file** for Gemini to write into:
-    ```bash
-    touch practice/fibonacci.py
-    ```
+
+```bash
+touch practice/fibonacci.py
+```
 
 2.  **Ask Gemini to write the function with a general prompt:**
-    ```bash
-    gemini 'Write a Python function to calculate the nth Fibonacci number. Place it in a new file named `practice/fibonacci.py`.'
-    ```
+
+```bash
+gstudent 'Write a Python function to calculate the nth Fibonacci number. Place it in a new file named `practice/fibonacci.py`.'
+```
 
 3.  **Review the output (First Iteration):**
     Examine `practice/fibonacci.py`.
@@ -33,10 +35,11 @@ You need Gemini to write a Python function that calculates the nth Fibonacci num
 Let's assume Gemini's first attempt was recursive and you wanted an iterative solution for efficiency.
 
 1.  **Modify your prompt** to add this constraint. You might also ask it to include documentation.
-    ```bash
-    gemini 'In the file `practice/fibonacci.py`, please replace the existing function with a new, *iterative* version that calculates the nth Fibonacci number. Also, include a docstring explaining the function, its parameters, and what it returns.'
-    ```
-    *Note: By explicitly telling Gemini to modify the file, you guide it to perform an in-place edit.*
+
+```bash
+gstudent 'In the file `practice/fibonacci.py`, please replace the existing function with a new, *iterative* version that calculates the nth Fibonacci number. Also, include a docstring explaining the function, its parameters, and what it returns.'
+```
+*Note: By explicitly telling Gemini to modify the file, you guide it to perform an in-place edit.*
 
 2.  **Review the output (Second Iteration):**
     Check `practice/fibonacci.py` again. Has it addressed your new requirements? Is it iterative? Does it have a docstring?
@@ -46,9 +49,10 @@ Let's assume Gemini's first attempt was recursive and you wanted an iterative so
 Let's say the iterative solution is good, but you realize it doesn't handle negative input or you want a specific type hint.
 
 1.  **Modify your prompt further.**
-    ```bash
-    gemini 'Refine the existing function in `practice/fibonacci.py`. Ensure it raises a ValueError if "n" is a negative number and add type hints for the "n" parameter (int) and the return value (int).'
-    ```
+
+```bash
+gstudent 'Refine the existing function in `practice/fibonacci.py`. Ensure it raises a ValueError if "n" is a negative number and add type hints for the "n" parameter (int) and the return value (int).'
+```
 
 2.  **Review the output (Final Iteration):**
     Verify the updated `practice/fibonacci.py`. Does it handle negative numbers? Are the type hints present?

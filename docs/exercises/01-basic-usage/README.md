@@ -14,18 +14,19 @@ Your task is to use Gemini to refactor this script into a cleaner, more modular 
 
 1.  **Examine the initial script:**
     Create a file `practice/rectangle_calculator.py` with the following content:
-    ```python
-    # practice/rectangle_calculator.py
-    
-    length = 10
-    width = 5
-    
-    area = length * width
-    perimeter = 2 * (length + width)
-    
-    print("Area:", area)
-    print("Perimeter:", perimeter)
-    ```
+
+```python
+# practice/rectangle_calculator.py
+
+length = 10
+width = 5
+
+area = length * width
+perimeter = 2 * (length + width)
+
+print("Area:", area)
+print("Perimeter:", perimeter)
+```
 
 2.  **Use Gemini to refactor the script:**
     Formulate a prompt for Gemini that asks it to refactor `practice/rectangle_calculator.py`. Your prompt should aim to:
@@ -34,18 +35,20 @@ Your task is to use Gemini to refactor this script into a cleaner, more modular 
     *   Add a main execution block (`if __name__ == "__main__":`).
 
     Example prompt idea:
-    ```bash
-    gemini 'In the file `practice/rectangle_calculator.py`, refactor the script to use functions for calculating area and perimeter. The functions should be named calculate_area and calculate_perimeter, and should accept length and width as arguments. Also, add a main execution block (`if __name__ == "__main__":`) to call these functions and print the results.'
-    ```
+
+```bash
+gstudent 'In the file `practice/rectangle_calculator.py`, refactor the script to use functions for calculating area and perimeter. The functions should be named calculate_area and calculate_perimeter, and should accept length and width as arguments. Also, add a main execution block (`if __name__ == "__main__":`) to call these functions and print the results.'
+```
 
 3.  **Review Gemini's output:**
     Inspect the modified `practice/rectangle_calculator.py` file after Gemini has processed it. Does it meet the objectives?
 
 4.  **Test the refactored script:**
     Run the refactored script to ensure it still produces the correct output:
-    ```bash
-    python practice/rectangle_calculator.py
-    ```
+
+```bash
+python practice/rectangle_calculator.py
+```
 
 ## Expected Outcome (Example)
 

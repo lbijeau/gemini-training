@@ -45,17 +45,22 @@ Changes:
 
 1.  Make a small change to a file (e.g., add a comment to `practice/hello_world_gemini.py`).
 2.  Stage the change:
-    ```bash
-    git add practice/hello_world_gemini.py
-    ```
+
+```bash
+git add practice/hello_world_gemini.py
+```
+
 3.  Start Gemini:
-    ```bash
-    gemini
-    ```
+
+```bash
+gemini
+```
+
 4.  Run your new command:
-    ```
-    /commit-msg
-    ```
+
+```text
+/commit-msg
+```
 
 ### Expected Output
 
