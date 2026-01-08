@@ -22,10 +22,13 @@ hero:
 features:
   - title: Context Mastery
     details: Learn how to manage the context window effectively for complex refactoring.
-  - title: Agent Delegation
-    details: Practice delegating research and implementation tasks to specialized sub-agents.
+    link: /modules/08-context-and-memory
+  - title: Extensibility
+    details: Discover how to extend Gemini with custom tools, MCP servers, and new capabilities.
+    link: /modules/04-extensions-overview
   - title: Interactive Power User
     details: Master the terminal shortcuts and iterative refinement patterns.
+    link: /modules/06-interactive-power-user
 ---
 
 <div style="text-align: center; margin-top: 2rem; opacity: 0.6; font-size: 0.9rem;">
