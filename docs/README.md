@@ -6,7 +6,7 @@ Welcome to the Gemini Training repository!
 
 This repository provides detailed information and practical guidance on effectively using the Gemini code assistant. Whether you're just starting out or looking to master advanced techniques, you'll find modules, exercises, and examples to help you on your journey.
 
-**[🚀 Get Started Here!](getting-started.md)**
+**[🌐 GitHub Training Page](https://lbijeau.github.io/gemini-training/)** | **[🚀 Get Started Here!](getting-started.md)**
 
 ## Repository Structure
 
