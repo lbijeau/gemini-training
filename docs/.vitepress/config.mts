@@ -9,6 +9,24 @@ export default withMermaid(defineConfig({
   description: "Master the Gemini CLI for Software Engineering",
   ignoreDeadLinks: true,
   outDir: '.vitepress/dist',
+  
+  // SEO & UX Improvements
+  cleanUrls: true,
+  lastUpdated: true,
+  sitemap: {
+    hostname: 'https://lbijeau.github.io/gemini-training/'
+  },
+  head: [
+    ['link', { rel: 'icon', href: '/gemini-training/assets/logo.png' }],
+    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+    ['meta', { name: 'og:type', content: 'website' }],
+    ['meta', { name: 'og:locale', content: 'en' }],
+    ['meta', { name: 'og:site_name', content: 'Gemini Training' }],
+    ['meta', { name: 'og:image', content: 'https://lbijeau.github.io/gemini-training/assets/logo.png' }],
+    ['meta', { name: 'twitter:card', content: 'summary' }],
+    ['meta', { name: 'twitter:image', content: 'https://lbijeau.github.io/gemini-training/assets/logo.png' }]
+  ],
+
   themeConfig: {
     logo: '/assets/logo.png',
     nav: [
